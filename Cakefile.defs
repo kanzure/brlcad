@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.48 1991-10-11 21:51:34 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.49 1991-10-12 06:30:37 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -567,8 +567,9 @@ set -S2 "/bin/sh"
 #	endif
 #	define	LIBMALLOC	/* must use libc.a, for _malloc_at_addr() */
 #	define	LIBRT_TIMER	timer42
-#	undef	sun_no_opts
-#	define	sun_x11
+#	define	sun_no_opts	/* Production configuration */
+#	undef	sun_x11
+#	undef	sun_openwin
 #	undef	sun_x11_gds
 #	ifdef sun_no_opts
 /*		Normal Sun configuration */
@@ -869,6 +870,7 @@ set -S2 "/bin/sh"
 #endif
 
 #ifdef pyr
+/*	Pyramid with OSx */
 #	undef	pyr
 #	define	MTYPE	pyr
 #	define	BSD	42
