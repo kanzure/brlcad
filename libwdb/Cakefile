@@ -1,11 +1,11 @@
 /*
  *			libwdb/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libwdb/Cakefile,v 9.5 1991-02-27 19:57:31 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libwdb/Cakefile,v 9.6 1991-07-02 02:36:46 mike Exp $
  */
 #define PRODUCTS	libwdb.ARCH_SUF
 #define SRCDIR	libwdb
-#define FILES	wdb reg spl ars arbn units pipe export nmg
+#define FILES	wdb reg spl ars arbn units pipe export nmg poly id
 #define	SRCSUFF	.c
 #define MANSECTION	3
 
