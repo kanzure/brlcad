@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.20 1995-06-16 17:54:42 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.21 1995-06-16 17:56:44 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -861,6 +861,11 @@ set -S2 "/bin/sh"
 #	define	MGED_OBJS	dm-X
 #	define	MGED_CONFIG	-DDM_X -I''XINCDIR
 #	define	MGED_LIBES	-L''XLIBDIR -lX11
+#	define  XMGED_OBJS      dm-X
+#	define  XMGED_CONFIG    -DDM_X
+#	define  XMGED_LIBES     -L/usr/lpp/X11/Motif1.2/lib -L''XLIBDIR \
+				-L../lib -lXm -lXt -lX11 -lm -lXext -ll -lXi
+#	define  XMGED_ALLOCA alloca
 #endif
 
 #if defined(__CAKE__at)
