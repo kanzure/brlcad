@@ -1,7 +1,7 @@
 /*
  *			remrt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 11.16 1997-11-05 15:24:34 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 11.17 1998-03-17 05:49:23 mike Exp $
  */
 
 #define CONFIGDEFS	RFBD_CONFIG
@@ -49,7 +49,6 @@
 		RTDIR/sh_rtrans.o \
 		RTDIR/sh_brdf.o \
 		RTDIR/sh_gauss.o \
-		RTDIR/sh_paint.o \
 		RTDIR/sh_noise.o \
 		RTDIR/sh_prj.o \
 		RTDIR/sh_grass.o \
