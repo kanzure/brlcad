@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.33 1991-07-24 20:18:46 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.34 1991-07-25 04:54:13 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -420,7 +420,8 @@ set -S2 "/bin/sh"
 #	endif
 #	define	GFLAG		-G 15
 /*	ANSI+POSIX mode is used over ANSI, to get fdopen(), etc, defined. */
-#	define  CC_OPTS		GFLAG -ansiposix
+/*	Warning 293 is a nuissance, and shouldn't even be printed */
+#	define  CC_OPTS		GFLAG -ansiposix -woff 293
 #	define	STANDARD_LIBES	-lm -lmalloc -lc''SHARED
 #	define	LIBRT_LIBES	-lmpc
 #	define	LGT_CONFIG	GFLAG -lmpc
