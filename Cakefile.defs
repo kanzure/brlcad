@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.143 1999-05-08 00:06:32 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.144 1999-05-08 00:09:38 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -881,6 +881,9 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	LIBZ_DIR	_use_system_z_
 #	define	LIBZ		-lz
 #	define	LIBZ_DEP	/**/
+#	define	LIBPNG_DIR	_use_system_png_
+#	define	LIBPNG		-lpng
+#	define	LIBPNG_DEP	/**/
 #endif
 
 #if defined(__CAKE__fbsd)
@@ -932,6 +935,9 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	LIBZ_DIR	_use_system_z_
 #	define	LIBZ		-lz
 #	define	LIBZ_DEP	/**/
+#	define	LIBPNG_DIR	_use_system_png_
+#	define	LIBPNG		-L/usr/local/lib -lpng
+#	define	LIBPNG_DEP	/**/
 #endif
 
 #if defined(__CAKE__bsdi)
@@ -1916,9 +1922,11 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	LIBZ		-L''LIBZ_DIR -lz
 #	define	LIBZ_DEP	[[LIBVERS ../libz/libz.ARCH_SUF]]
 #    endif
+#    if !defined(LIBPNG)
 #	define	LIBPNG_DIR	../libpng
 #	define	LIBPNG		-L''LIBPNG_DIR -lpng
 #	define	LIBPNG_DEP	[[LIBVERS ../libpng/libpng.ARCH_SUF]]
+#    endif
 #	define	LIBFB_DIR	../libfb
 #	define	LIBFB		-L''LIBFB_DIR -lfb
 #	define	LIBFB_DEP	[[LIBVERS ../libfb/libfb.ARCH_SUF]]
@@ -2003,9 +2011,11 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	LIBZ		-L''LIBZ_DIR -lz
 #	define	LIBZ_DEP	[[LIBVERS ../.libz.MTYPE/libz.ARCH_SUF]]
 #    endif
+#    if !defined(LIBPNG)
 #	define	LIBPNG_DIR	../.libpng.MTYPE
 #	define	LIBPNG		-L''LIBPNG_DIR -lpng
 #	define	LIBPNG_DEP	[[LIBVERS ../.libpng.MTYPE/libpng.ARCH_SUF]]
+#    endif
 #	define	LIBFB_DIR	../.libfb.MTYPE
 #	define	LIBFB		-L''LIBFB_DIR -lfb
 #	define	LIBFB_DEP	[[LIBVERS ../.libfb.MTYPE/libfb.ARCH_SUF]]
