@@ -1,11 +1,11 @@
 /*
  *			rttherm/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.34 1998-12-10 08:43:16 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.35 1999-07-01 02:36:42 mike Exp $
  */
 
 /* This shows up in CFLAGS */
-#define CONFIGDEFS	RT_CONFIG -DRT_MULTISPECTRAL
+#define CONFIGDEFS	-DRT_MULTISPECTRAL -I''XINCDIR
 
 #define SRCDIR	rttherm
 #define PRODUCTS	rttherm disp
