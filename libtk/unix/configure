@@ -537,7 +537,7 @@ else
 fi
 
 
-# RCS: @(#) $Id: configure,v 1.4 1999-10-19 20:03:01 jra Exp $
+# RCS: @(#) $Id: configure,v 1.5 1999-10-20 14:30:57 jra Exp $
 
 TK_VERSION=8.2
 TK_MAJOR_VERSION=8
@@ -2279,6 +2279,8 @@ fi
 
 if test "$TCL_EXEC_PREFIX" != "$exec_prefix"; then
     LIB_RUNTIME_DIR="${LIB_RUNTIME_DIR}:${TCL_EXEC_PREFIX}/lib"
+else
+    LIB_RUNTIME_DIR="${exec_prefix}/lib"
 fi
 
 #--------------------------------------------------------------------
