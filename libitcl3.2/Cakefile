@@ -9,7 +9,7 @@
 
 #if !defined(BUILD_LIBRARY)
 #define	BUILD_LIBRARY	ar r
-#define ITCL_OPTS	--srcdir=[[pwd]]/../SRCDIR --quiet \
+#define ITCL_OPTS	--srcdir=[[pwd]]/../SRCDIR --disable-shared --quiet \
 			 --cache-file cache.MTYPE  \
 			 --exec-prefix=BASEDIR --prefix=BASEDIR \
 			 --with-tcl=[[pwd]]/[[echo LIBTCL_DIR]] \
