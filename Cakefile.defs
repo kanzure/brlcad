@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.138 1999-01-07 06:47:44 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.139 1999-02-09 20:05:59 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -322,10 +322,16 @@ set -S2 "/bin/sh"
 /*		-fullwarn is pretty verbose */
 #		define	OPTIMIZER	-g -use_readonly_const
 #	endif
-#	define	GFLAG		-64 -mips3 -KPIC -G 7
+#	if 1	/* PRODUCTION=1 */
+/*		32-bit version, compatible with HLA, etc. etc. */
+#		define	GFLAG		-n32 -mips3 -KPIC -G 7
+#	else
+/*		64-bit version */
+#		define	GFLAG		-64 -mips3 -KPIC -G 7
+#endif
 #	define  XINCDIR /usr/include/X11
 #	define	XLIBDIR /usr/lib64
-#	if 1	/* PRODUCTION=1 */
+#	if 0	/* PRODUCTION=1 */
 /*		Shared library version support */
 #		define	ARCH_SUF	so
 #		define	LIBVERS ../sh/sharedlibvers.sh
