@@ -8,7 +8,7 @@
 #  Michael John Muuss, BRL, 23-June-1991.
 #  Public Domain, Distribution Unlimited
 #
-#  @(#) $Header: /usr/Backup/upgrade/brlcad/brlcad/brlman/brlman,v 1.1 1991-06-23 01:50:17 mike Exp $ (BRL)
+#  @(#) $Header: /usr/Backup/upgrade/brlcad/brlcad/brlman/brlman,v 1.2 1998-07-01 14:33:48 butler Exp $ (BRL)
 
 if test $# -lt 1
 then
@@ -30,7 +30,7 @@ fi
 
 if test "${MANPATH}" = ""
 then
-	MANPATH=/usr/brlcad/man
+	MANPATH=/vld/butler/brlcad/.m4i64/bin/man
 fi
 
 PATH_ELEMENTS=`echo ${MANPATH} | sed 's/^://
