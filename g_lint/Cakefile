@@ -1,18 +1,24 @@
 /*
  *		CAKE(1) specification file for G_LINT(1)
  *
- * $Header: /usr/Backup/upgrade/brlcad/brlcad/g_lint/Cakefile,v 1.1 1995-06-15 20:18:09 pjt Exp $
+ * $Header: /usr/Backup/upgrade/brlcad/brlcad/g_lint/Cakefile,v 1.2 1996-11-26 19:58:42 pjt Exp $
  */
 
 #define	SRCDIR	g_lint
-#define	PRODUCTS	g_lint
+#define	PRODUCTS	g_lint solshoot testfree
 #define	SRCSUFF		.c
 #define	MANSECTION	1
 
 #include "../Cakefile.defs"
 #include "../Cakefile.prog"
 
-g_lint:	g_lint.o LIBRT_DEP
-	CC LDFLAGS g_lint.o LIBRT LIBRT_LIBES LIBES -o g_lint
+g_lint:	g_lint.o LIBRT_DEP LIBBN_DEP LIBBU_DEP
+	CC LDFLAGS g_lint.o LIBRT LIBBN LIBBU LIBBU_LIBES  LIBES -o g_lint
+
+solshoot:	solshoot.o LIBRT_DEP LIBREDBLACK_DEP LIBBN_DEP LIBBU_DEP
+	CC LDFLAGS solshoot.o LIBRT LIBBN LIBBU LIBBU_LIBES  LIBREDBLACK LIBES -o solshoot
+
+testfree:	testfree.o LIBRT_DEP LIBREDBLACK_DEP LIBBN_DEP LIBBU_DEP
+	CC LDFLAGS testfree.o LIBRT LIBBN LIBBU LIBBU_LIBES  LIBREDBLACK LIBES -o testfree
 
 #include "../Cakefile.rules"
