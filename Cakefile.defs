@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 1.4 1988-09-19 22:25:16 reschly Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 1.5 1988-09-19 22:26:42 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -130,8 +130,7 @@ set -S2 "/bin/sh"
 #	define	MTYPE	vax
 #	define	UNIXTYPE	BSD
 #	define	HAS_TCP	1
-/*	Uncomment the following line on Ultrix & 4.1 systems */
-/*#	define	CC_DEFS	-Dvoid=int
+/*	On Ultrix & 4.1 systems, #define	CC_DEFS	-Dvoid=int */
 #	define	LIBFB_OBJS	if_remote pkg if_ptty if_adage
 #	define	LIBFB_CONFIG	-DIF_REMOTE -DIF_PTTY -DIF_ADAGE
 /*	At USNA, add -DGM256 to LIBFB_CONFIG */
