@@ -7,7 +7,7 @@ exec wish "$0" "$@"
 # create colors using either the RGB, HSB, or CYM color spaces
 # and apply the color to existing applications.
 #
-# RCS: @(#) $Id: tcolor,v 1.2 2003-11-07 14:58:23 morrison Exp $
+# RCS: @(#) $Id: tcolor,v 1.3 2004-03-04 19:49:20 morrison Exp $
 
 wm title . "Color Editor"
 
