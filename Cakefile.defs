@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.189 2000-06-14 18:19:48 bparker Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.190 2000-06-15 14:45:37 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -450,12 +450,13 @@ set -S2 "/bin/sh"
 #if defined(__CAKE__m4i64)
 /*	Silicon Graphics 4D, running IRIX64 6.4 (on a MIPS4 machine) */
 #	undef	sgi
-#	if 1 /*	Use 64 bit	*/
+#	if 1 /*	PRODUCTION=1 */
 #		define M4I64_USE_64_BIT
 #	else
+/*		Old versions of MUVES can't use the 64-bit compiler */
 #		if 1 /* Use n32 */
 #			define M4I64_USE_N32
-#		endif /* else use 32 */
+#		endif /* else use 32 (o32) */
 #	endif
 #	if 1 /*	PRODUCTION=1	*/
 #		define	M4I64_PRODUCTION
