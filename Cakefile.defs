@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.168 1999-10-25 17:11:24 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.169 1999-10-25 18:28:33 jra Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -961,13 +961,15 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	MGED_LIBES	LIBDM LIBDM_LIBES LIBFB LIBFB_LIBES -lXi -lXext
 #	define	LIBDM_SAMPLE_LIBES \$"(LIBDM)" \$"(LIBTK)" \$"(LIBTCL)" \$"(LIBTK_LIBES)" \$"(LIBTCL_LIBES)" \$"(XLIBDIR)" -lXi -lXext -lX11
 /*	Use the system-provided TCL and Tk libraries */
-#	define	LIBTCL_DIR	_use_system_tcl_
-#	define	LIBTCL_USE_SYSTEM 
-#	define	LIBTCL		-L/usr/local/lib -ltcl80
-#	define	LIBTCL_DEP	/**/
-#	define	LIBTK_DIR	_use_system_tk_
-#	define	LIBTK		-L/usr/local/lib -ltk80
-#	define	LIBTK_DEP	/**/
+#	if 0
+#		define	LIBTCL_DIR	_use_system_tcl_
+#		define	LIBTCL_USE_SYSTEM 
+#		define	LIBTCL		-L/usr/local/lib -ltcl80
+#		define	LIBTCL_DEP	/**/
+#		define	LIBTK_DIR	_use_system_tk_
+#		define	LIBTK		-L/usr/local/lib -ltk80
+#		define	LIBTK_DEP	/**/
+#	endif
 #	define	LIBZ_DIR	_use_system_z_
 #	define	LIBZ		-lz
 #	define	LIBZ_DEP	/**/
