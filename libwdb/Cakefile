@@ -1,7 +1,7 @@
 /*
  *			libwdb/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libwdb/Cakefile,v 9.6 1991-07-02 02:36:46 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libwdb/Cakefile,v 10.1 1991-10-12 06:36:53 mike Exp $
  */
 #define PRODUCTS	libwdb.ARCH_SUF
 #define SRCDIR	libwdb

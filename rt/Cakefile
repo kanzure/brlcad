@@ -1,7 +1,7 @@
 /*
  *			rt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 9.11 1991-06-23 23:43:51 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 10.1 1991-10-12 06:42:28 mike Exp $
  */
 #define CONFIGDEFS	RT_CONFIG
 

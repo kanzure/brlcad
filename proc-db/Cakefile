@@ -1,7 +1,7 @@
 /*
  *			proc-db/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 9.9 1991-09-20 23:22:44 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 10.1 1991-10-12 06:44:45 mike Exp $
  */
 
 #define SRCDIR	proc-db

@@ -1,7 +1,7 @@
 /*
  *			nirt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/nirt/Cakefile,v 1.5 1991-07-18 16:14:38 pjt Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/nirt/Cakefile,v 10.1 1991-10-12 06:53:36 mike Exp $
  */
 #define CONFIGDEFS	RT_CONFIG -DDFLT_SHELL=\\\\"/bin/tbsh\\\\"
 

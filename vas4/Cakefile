@@ -1,7 +1,7 @@
 /*
  *			vas4/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/vas4/Cakefile,v 9.2 1991-01-04 00:04:24 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/vas4/Cakefile,v 10.1 1991-10-12 06:50:27 mike Exp $
  */
 
 #define SRCDIR	vas4

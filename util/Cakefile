@@ -1,7 +1,7 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 8.16 1991-07-25 03:14:46 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 10.1 1991-10-12 06:49:26 mike Exp $
  */
 
 #define SRCDIR	util

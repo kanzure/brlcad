@@ -1,7 +1,7 @@
 /*
  *			fbserv/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/fbserv/Cakefile,v 9.3 1991-01-03 23:46:38 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/fbserv/Cakefile,v 10.1 1991-10-12 06:37:41 mike Exp $
  */
 
 #define CONFIGDEFS	RFBD_CONFIG

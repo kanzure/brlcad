@@ -1,7 +1,7 @@
 /*
  *			jove/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/jove/Cakefile,v 1.2 1991-09-23 03:17:19 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/jove/Cakefile,v 10.1 1991-10-12 06:54:08 mike Exp $
  */
 
 #define SRCDIR	jove
