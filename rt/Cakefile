@@ -1,7 +1,7 @@
 /*
  *			rt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 11.23 1997-07-16 14:21:03 gdurf Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 11.24 1997-08-28 23:07:53 mike Exp $
  */
 #define CONFIGDEFS	RT_CONFIG
 
@@ -42,7 +42,7 @@
 		sh_gauss.o sh_paint.o sh_noise.o sh_prj.o
 
 rt:	RT_OBJ LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBFB_DEP
-	newvers.sh version "Ray-Tracer"
+	newvers.sh version "The BRL-CAD Ray-Tracer RT"
 	CC CFLAGS -c vers.c
 	CC LDFLAGS RT_OBJ vers.o LIBRT LIBBN LIBFB LIBFB_LIBES LIBBU LIBBU_LIBES LIBTK LIBTCL LIBTCL_LIBES LIBES -o rt
 
