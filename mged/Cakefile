@@ -1,5 +1,7 @@
 /*
  *			mged/Cakefile
+ *
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/mged/Cakefile,v 11.43 1999-05-13 21:52:58 bparker Exp $
  */
 #define       CONFIGDEFS      MGED_CONFIG "-Dyylex=cmd_nop"
 
