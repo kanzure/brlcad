@@ -1,7 +1,7 @@
 /*
  *			libwdb/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libwdb/Cakefile,v 11.10 2001-11-16 19:59:39 bparker Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libwdb/Cakefile,v 11.11 2003-09-27 01:24:20 morrison Exp $
  */
 #define PRODUCTS	libwdb.ARCH_SUF
 #define SRCDIR	libwdb
@@ -14,6 +14,10 @@
 #define LIBRARY_TITLE		"BRL-CAD Library for Writing Databases"
 
 #include "../Cakefile.defs"
+
+#if defined(RESOLVE_LIBRARIES)
+#	define EXTRA_OBJ_NO_DEPENDENCY -lc -lm -brtl -L../.libbu.sp3 -lbu -L../.libbn.sp3 -lbn -L../.librt.sp3 -lrt
+#endif
 
 #include "../Cakefile.lib"
 #include "../Cakefile.rules"
