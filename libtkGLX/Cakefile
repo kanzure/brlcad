@@ -1,0 +1,18 @@
+/*
+ *			libwdb/Cakefile
+ *
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libtkGLX/Cakefile,v 1.1 1997-09-23 21:35:44 bparker Exp $
+ */
+#define PRODUCTS	libtkGLX.ARCH_SUF
+#define SRCDIR	libtkGLX
+#define FILES	tkGLXCmds tkGLXInit tkGLXwin
+#define	SRCSUFF	.c
+#define MANSECTION	3
+
+#define VERSION_VARIABLE	libtkGLX_version
+#define LIBRARY_TITLE		"glx widget with Tcl/Tk bindings"
+
+#include "../Cakefile.defs"
+
+#include "../Cakefile.lib"
+#include "../Cakefile.rules"
