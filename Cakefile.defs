@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.150 1999-05-17 13:39:17 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.151 1999-05-17 17:55:34 jra Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -249,6 +249,7 @@ set -S2 "/bin/sh"
 					-OPT:const_copy_limit=16000 \
 					-use_readonly_const \
 					-woff 1203,1048,1110,1209
+#		define	LIBBU_LIBES	LIBTCL LIBTCL_LIBES
 #	else
 /*		This version for debugging with DBX */
 /*		-fullwarn is pretty verbose */
