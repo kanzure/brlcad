@@ -1,10 +1,10 @@
 /*
  *		CAKE(1) specification file for GTOOLS
  *
- * $Header: /usr/Backup/upgrade/brlcad/brlcad/gtools/Cakefile,v 1.1 1999-02-12 20:44:13 jra Exp $
+ * $Header: /usr/Backup/upgrade/brlcad/brlcad/gtools/Cakefile,v 1.2 1999-02-12 21:20:45 jra Exp $
  */
 
-#define	SRCDIR	g_lint
+#define	SRCDIR	gtools
 #define	PRODUCTS	g_lint g_diff
 #define	SRCSUFF		.c
 #define	MANSECTION	1
