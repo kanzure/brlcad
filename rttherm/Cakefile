@@ -1,7 +1,7 @@
 /*
  *			rt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.26 1998-03-08 19:53:15 butler Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.27 1998-03-16 01:47:48 butler Exp $
  */
 #define CONFIGDEFS	RT_CONFIG
 
@@ -44,7 +44,7 @@
 rt:	RT_OBJ LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBFB_DEP
 	newvers.sh version "The BRL-CAD Ray-Tracer RT"
 	CC CFLAGS -c vers.c
-	CC LDFLAGS RT_OBJ vers.o LIBRT LIBBN LIBFB LIBFB_LIBES LIBBU LIBBU_LIBES LIBTK LIBTCL LIBTCL_LIBES LIBES -o rt
+	CC LDFLAGS RT_OBJ vers.o LIBRT LIBBN LIBFB LIBFB_LIBES LIBBU LIBBU_LIBES  LIBES -o rt
 
 
 #define RTRAY_OBJ	RTUIF viewray.o wray.o
