@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.251 2002-03-19 16:34:09 kermit Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.252 2002-04-19 01:42:04 jra Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -2376,7 +2376,7 @@ set -S2 "/bin/sh"
 #		define	LIBITK		-L''LIBITK_DIR -litk''ITCL_VERS
 #		define	LIBITK_DEP	[[LIBVERS LIBITK_DIR/libitk''ITCL_VERS.''ARCH_SUF]]
 #	endif
-#	if !defined(LIBITCL_DIR)
+#	if !defined(LIBITK_DIR)
 #		define	LIBITK_DIR	../libitcl''ITCL_VERS/itk
 #	endif
 #	define  LIBTCLCAD_DIR	../libtclcad
