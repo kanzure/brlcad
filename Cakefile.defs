@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.19 1994-08-10 01:55:25 gdurf Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.20 1994-08-10 22:24:08 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -528,7 +528,7 @@ set -S2 "/bin/sh"
 #	else
 /*		This version for debugging with DBX */
 #		define	OPTIMIZER	-g
-#		define	SHARED	_s
+#		define	SHARED		/**/
 #	endif
 #	define	GFLAG		-G 13
 /*	ANSI+POSIX mode is used over ANSI, to get fdopen(), etc, defined. */
