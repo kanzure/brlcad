@@ -2,7 +2,7 @@
 #                          B R L M A N
 # BRL-CAD
 #
-# Copyright (c) 1991-2004 United States Government as represented by
+# Copyright (C) 1991-2005 United States Government as represented by
 # the U.S. Army Research Laboratory.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -41,7 +41,7 @@
 #
 #  Michael John Muuss, BRL, 23-June-1991.
 #
-#  @(#) $Header: /usr/Backup/upgrade/brlcad/brlcad/src/brlman/brlman,v 14.2 2004-12-18 00:56:40 morrison Exp $ (BRL)
+#  @(#) $Header: /usr/Backup/upgrade/brlcad/brlcad/src/brlman/brlman,v 14.3 2005-01-30 20:30:15 brlcad Exp $ (BRL)
 
 if test $# -lt 1
 then
