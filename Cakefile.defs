@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.65 1994-11-19 00:35:33 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.66 1994-11-21 16:24:32 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -602,8 +602,12 @@ set -S2 "/bin/sh"
 #	define	MTYPE	7d
 #	if 1	/* PRODUCTION=1 */
 /*		This version for production: optimization & shared libraries */
-#		define	OPTIMIZER	-O2 -OPT:fold_arith_limit=16000 -OPT:const_copy_limit=16000
-/*		Use shared libraries */
+/*		Warning 1174 is "variable declared but never referenced". */
+/*		Warning 1032 is "expression must have arithmetic type". */
+#		define	OPTIMIZER	-O2 -OPT:fold_arith_limit=16000 \
+					-OPT:const_copy_limit=16000 \
+					-woff 1032,1174
+/*			what about	-Wl,-S ? -- it doesn't work! */
 #	else
 /*		This version for debugging with DBX */
 /*		-fullwarn is pretty verbose */
