@@ -6,7 +6,7 @@
  *  find the symbol LIBFB_LIBES in ../Cakefile.defs in the section on
  *  the machine architecture you are using.
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libfb/Cakefile,v 11.6 2003-09-27 01:24:17 morrison Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libfb/Cakefile,v 11.7 2003-10-01 16:19:32 morrison Exp $
  */
 
 #define	CONFIGDEFS	LIBFB_CONFIG
@@ -25,7 +25,7 @@
 #include "../Cakefile.defs"
 
 #if defined(RESOLVE_LIBRARIES)
-#	define EXTRA_OBJ_NO_DEPENDENCY -lc -lm -lX11 -brtl -L../.libbu.sp3 -lbu -L../.libpkg.sp3 -lpkg -L../.libtcl8.4.sp3 -ltcl
+#	define EXTRA_OBJ_NO_DEPENDENCY -lc -lm -lX11 -brtl -L../.libbu.sp3 -lbu -L../.libpkg.sp3 -lpkg -L../.libtcl8.4.sp3 -ltcl8.4
 #endif
 
 #ifdef	LIBFB_SETUP
