@@ -1,7 +1,7 @@
 /*
  *			nirt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/nirt/Cakefile,v 1.3 1991-06-18 12:30:38 pjt Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/nirt/Cakefile,v 1.4 1991-07-02 02:27:10 mike Exp $
  */
 #define CONFIGDEFS	RT_CONFIG -DDFLT_SHELL=\\\\"/bin/tbsh\\\\"
 
@@ -21,3 +21,5 @@ nirt:	NIRT_OBJ LIBRT
 	sh ../newvers.sh version "Natalie's Interactive Ray Tracer"
 	CC CFLAGS -c vers.c
 	CC LDFLAGS NIRT_OBJ vers.o LIB_PRE''LIBRT LIB_PRE''LIBFB LIBFB_LIBES LIBRT_LIBES LIBMALLOC LIBES -o nirt
+
+#include "../Cakefile.rules"
