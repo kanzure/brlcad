@@ -6,7 +6,7 @@
 			Aberdeen Proving Ground
 			Maryland 21005-5066
 
-	$Header: /usr/Backup/upgrade/brlcad/brlcad/burst/Cakefile,v 1.12 1996-08-27 06:05:44 mike Exp $ (BRL)
+	$Header: /usr/Backup/upgrade/brlcad/brlcad/burst/Cakefile,v 1.13 1996-08-31 11:31:42 mike Exp $ (BRL)
 
  */
 /* Remove the following line if you have BRLCAD 4.0 or later. */
@@ -25,8 +25,8 @@
 #include "../Cakefile.prog"
 
 /* Explicit composition of each product */
-PRODUCTS:	OBJ LIBRT_DEP LIBFB_DEP LIBBU_DEP
-	CC LDFLAGS -o burst OBJ LIBFB LIBFB_LIBES LIBRT LIBBU LIBBU_LIBES LIBTERMLIB LIBES -lm
+PRODUCTS:	OBJ LIBRT_DEP LIBBN_DEP LIBFB_DEP LIBBU_DEP
+	CC LDFLAGS -o burst OBJ LIBFB LIBFB_LIBES LIBRT LIBBN LIBBU LIBBU_LIBES LIBTERMLIB LIBES -lm
 
 all&: PRODUCTS
 
