@@ -1,7 +1,7 @@
 /*
  *			proc-db/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 11.12 1999-01-12 02:08:24 morrison Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 11.13 1999-01-15 19:08:04 morrison Exp $
  */
 
 #define SRCDIR	proc-db
@@ -81,7 +81,7 @@ fence:	fence.o LIBRT_DEP LIBBN_DEP LIBBU_DEP
 	CC LDFLAGS fence.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBES -o fence
 
 pickett_fence: pickett_fence.o LIBRT_DEP LIBBN_DEP LIBBU_DEP
-	CC LDFLAGS pickett_fence.o LIBWDB LIBRT LIBBN LIBBU LIBU_LIBES LIBES -o pickett_fence
+	CC LDFLAGS pickett_fence.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBES -o pickett_fence
 
 #include "../Cakefile.rules"
 
