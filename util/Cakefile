@@ -1,7 +1,7 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.4 1995-12-15 05:53:23 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.5 1996-01-02 21:10:42 gdurf Exp $
  */
 
 #define SRCDIR	util
@@ -28,7 +28,7 @@
 	pl-asc pl-hpgl \
 	pl-pl pl-tek pl-ps pl-sgi \
 	plcolor pldebug plgetframe plline2 plrot plstat \
-	query rle-pix sgi-pix sun-pix xyz-pl msrandom
+	query rle-pix sgi-pix sun-pix xyz-pl msrandom pixblend
 
 /* SGI specific goodies: pix-ci */
 /* X11 specific program:  pl-X */
@@ -350,5 +350,8 @@ decimate : decimate.o
 
 msrandom: msrandom.o
 	CC LDFLAGS -o msrandom msrandom.o LIBRT LIBRT_LIBES LIBES
+
+pixblend:	pixblend.o
+	CC LDFLAGS -o pixblend pixblend.o LIBES
 
 #include "../Cakefile.rules"
