@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.227 2001-08-08 20:35:16 morrison Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.228 2001-08-09 20:32:46 morrison Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -837,7 +837,7 @@ set -S2 "/bin/sh"
 #			define	OPTIMIZER	-O -g
 #			define  PROFILER	-pg
 #		endif
-#		define	CC_DEFS		-std=iso9899:199409 -Wall -pedantic -D_REENTRANT -DSUNOS=58
+#		define	CC_DEFS		-Wall -pedantic -D_REENTRANT -DSUNOS=58
 #		define	CC_OPTS		-I''XINCDIR
 #	else
 /*		For now, we expect /opt/SUNWspro/bin ANSI compiler to be used */
@@ -1014,7 +1014,8 @@ set -S2 "/bin/sh"
 #	define	HAS_TCP 1
 #	define	HAS_SYMLINKS 1
 #	define	CC	gcc
-#	define	CC_DEFS -std=iso9899:199409 -pipe -fPIC -Wall -pedantic
+#	define	CC_DEFS -pipe -fPIC -Wall -pedantic
+/*			-std=iso9899:199409 */
 #	if BUILD_OPTIMIZED	/* PRODUCTION=1 */
 #		define	OPTIMIZER	-O3 -fno-strict-aliasing
 #	else
@@ -1106,7 +1107,7 @@ set -S2 "/bin/sh"
 #	define	XINCDIR	/usr/X11R6/include
 #	define	XLIBDIR	/usr/X11R6/lib
 #	define	CC	gcc
-#	define	CC_DEFS -std=iso9899:199409 -pipe -fPIC -Wall -pedantic
+#	define	CC_DEFS -pipe -fPIC -Wall -pedantic
 #	define	LEX_OPTS	-l
 #	if BUILD_OPTIMIZED	/* PRODUCTION=1 */
 #		define	OPTIMIZER	-O3 -fno-strict-aliasing
