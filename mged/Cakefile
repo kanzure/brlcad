@@ -1,7 +1,7 @@
 /*
  *			mged/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/mged/Cakefile,v 11.45 2000-02-18 23:30:33 bparker Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/mged/Cakefile,v 11.46 2000-06-30 15:12:57 pjt Exp $
  */
 #define       CONFIGDEFS      MGED_CONFIG "-Dyylex=cmd_nop"
 
@@ -23,7 +23,7 @@
 			solids_on_ray history \
 			TCP_FILES attach dm-plot dm-ps doevent muves \
 			MGED_OBJS vdraw fbserv rect grid axes qray \
-			color_scheme vparse share
+			color_scheme vparse share bodyio
 
 /*#define USING_NEW_SO*/
 #include "../Cakefile.defs"
