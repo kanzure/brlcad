@@ -12,7 +12,7 @@
  * See the file "license.terms" for information on usage and redistribution
  * of this file, and for a DISCLAIMER OF ALL WARRANTIES.
  *
- * RCS: @(#) $Id: MW_TclStaticHeader.pch,v 1.2 2003-11-07 14:54:36 morrison Exp $
+ * RCS: @(#) $Id: MW_TclStaticHeader.pch,v 1.3 2004-03-04 19:47:12 morrison Exp $
  */
 
 /*
