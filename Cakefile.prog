@@ -14,7 +14,7 @@
  *  Distribution Status -
  *	Public Domain, Distribution Unlimitied.
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.prog,v 11.2 1995-08-10 20:15:29 gdurf Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.prog,v 11.3 2003-04-11 04:44:35 morrison Exp $
  */
 
 /* Default rule */
@@ -38,7 +38,7 @@ everything&::	PRODUCTS
 %.o:    ../SRCDIR/%.l			if exist ../SRCDIR/%.l
 	-rm -f ./%.c ./%.o
         LEX -t LEX_OPTS ../SRCDIR/%.l | sed -e 's/^[ 	]#/#/' > ./%.c
-	if test `wc -l < ./%.c` -lt 2; then rm -f ./%.c; exit 1; fi
+	if test `wc -l < ./%.c` -lt 2 ; then rm -f ./%.c ; exit 1 ; fi
 	CC CFLAGS -I. -c ./%.c
 
 %.o:    ../SRCDIR/%.y			if exist ../SRCDIR/%.y
