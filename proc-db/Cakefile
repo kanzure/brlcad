@@ -1,7 +1,7 @@
 /*
  *			proc-db/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 11.1 1995-01-04 10:06:23 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 11.2 1995-05-08 19:34:43 stay Exp $
  */
 
 #define SRCDIR	proc-db
@@ -53,6 +53,9 @@ molecule:	molecule.o
 
 teapot:		tea.o
 	CC LDFLAGS tea.o LIBWDB LIBRT LIBRT_LIBES LIBES -o teapot
+
+terrain: terrain.o
+	CC LDFLAGS terrain.o LIBWDB LIBRT LIBRT_LIBES LIBES -o terrain
 
 tea_nmg:	tea_nmg.o LIBWDB_DEP LIBRT_DEP
 	CC LDFLAGS tea_nmg.o LIBWDB LIBRT LIBRT_LIBES LIBES -o tea_nmg
