@@ -1,5 +1,5 @@
 /*
- *	$Header: /usr/Backup/upgrade/brlcad/brlcad/halftone/Cakefile,v 11.1 1995-01-04 10:21:57 mike Exp $
+ *	$Header: /usr/Backup/upgrade/brlcad/brlcad/halftone/Cakefile,v 11.2 1996-08-27 05:59:26 mike Exp $
  *
  *			halftone/Cakefile
  */
@@ -18,6 +18,6 @@
 /* Explicit composition of each product */
 
 halftone:	OBJ 
-	CC LDFLAGS -o halftone OBJ  LIBRT LIBFB LIBFB_LIBES LIBRT_LIBES LIBES
+	CC LDFLAGS -o halftone OBJ LIBRT LIBFB LIBFB_LIBES LIBBU LIBBU_LIBES LIBES
 
 #include "../Cakefile.rules"
