@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.95 1994-12-29 23:21:44 gdurf Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.96 1994-12-30 03:47:43 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -758,6 +758,20 @@ set -S2 "/bin/sh"
 #if defined(__CAKE__alpha)
 /*	DEC Alpha AXP running OSF/1 Version 3 */
 #	undef	alpha
+#	define	CC_OPTS	-std1 -readonly_strings
+#	define	OPTIMIZER	-O2 -Olimit 1400 -fp_reorder
+#	if 1	/* PRODUCTION=1 */
+/*		Shared library version support */
+#		define	ARCH_SUF	so
+#		define	LIBVERS ../sharedlibvers.sh
+#		define	BUILD_LIBRARY	ld -S -shared -o
+#		define	EXTRA_OBJ_NO_DEPENDENCY	-lm -lc
+#		define	RANLIB	true
+#		define	STANDARD_LIBES	-lm -lc -Wl,-rpath -Wl,/usr/lib:LIBDIR
+#	else
+/*		Static linked executables */
+#		define	RANLIB	ranlib5.sh
+#	endif
 #	define	MTYPE	alpha
 #	define	BSD	44
 #	define	HAS_TCP	1
