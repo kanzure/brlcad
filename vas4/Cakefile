@@ -1,7 +1,7 @@
 /*
  *			vas4/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/vas4/Cakefile,v 11.1 1995-01-04 10:18:29 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/vas4/Cakefile,v 11.2 1998-10-28 16:27:02 jra Exp $
  */
 
 #define SRCDIR	vas4
@@ -16,7 +16,7 @@
 
 /* Explicit composition of each product */
 
-vas4:	OBJ
-	CC LDFLAGS -o vas4 OBJ LIBFB LIBFB_LIBES LIBES
+vas4:	OBJ LIBFB_DEP LIBBU_DEP
+	CC LDFLAGS -o vas4 OBJ LIBFB LIBFB_LIBES LIBBU LIBBU_LIBES LIBES
 
 #include "../Cakefile.rules"
