@@ -1,7 +1,7 @@
 /*
  *			conv/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 10.9 1994-08-26 13:51:51 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 10.10 1994-09-01 12:27:34 jra Exp $
  */
 
 #define SRCDIR	conv
@@ -10,6 +10,8 @@
 			g-euclid1 fast4-g proe-g
 #define	SRCSUFF	.c
 #define MANSECTION	1
+
+#define STATIC_PRODUCTS ../SRCDIR/pro_engineer
 
 #include "../Cakefile.defs"
 #include "../Cakefile.prog"
