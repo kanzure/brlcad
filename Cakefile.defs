@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.70 1997-01-08 03:58:28 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.71 1997-01-09 01:46:06 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -370,7 +370,7 @@ set -S2 "/bin/sh"
 #	define	GFLAG		-mips3 -KPIC -G 7
 #	define  XINCDIR /usr/include/X11
 #	define	XLIBDIR /usr/lib64
-#	if 1	/* PRODUCTION=1 */
+#	if 0	/* PRODUCTION=1 */
 /*		Shared library version support */
 #		define	ARCH_SUF	so
 #		define	LIBVERS ../sharedlibvers.sh
@@ -398,12 +398,13 @@ set -S2 "/bin/sh"
 #	define	LIBFB_LIBES	LIBPKG -L''XLIBDIR -lX11 
 #if 1
 #	define	LIBDM_OBJS	dm-X dm-ogl
+#	define	LIBDM_CONFIG	-DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_X -DDM_OGL
 #else
 #	define  LIBDM_OBJS      dm-X
+#	define	LIBDM_CONFIG	-DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_X 
 #endif
-#	define	LIBDM_CONFIG	-DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_X -DDM_OGL
 #	define	MGED_OBJS	dm-X dm-ogl
-#	define	MGED_CONFIG	GFLAG -DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_X -DDM_OGL -I''XINCDIR -DMGED_TCL_LIBRARY=\\\\"/m/cad/tclscripts\\\\"
+#	define	MGED_CONFIG	GFLAG -DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_X -DDM_OGL -I''XINCDIR
 #	define	MGED_LIBES	LIBDM -L''XLIBDIR -lXi -lXext -lX11 -lGL
 #	define	HAS_TCP	1
 #	define	CC	cc
