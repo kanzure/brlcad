@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.201 2000-09-01 14:20:02 bparker Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.202 2000-09-01 14:48:14 bparker Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -930,7 +930,7 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 /*	for "ncurses" change "-lcurses" to "-lncurses" (Caldera OpenLinux, RedHat) */
 #	define	LIBTERMLIB	-lncurses
 #	define	LIBBU_LIBES	LIBTCL LIBTCL_LIBES -ldl
-#	if 1	/* Use MESA  and GLX */
+#	if 0	/* Use MESA  and GLX */
 #		define	LIBFB_CONFIG	-DIF_REMOTE -DIF_AB -I''XINCDIR -DIF_X -DIF_OGL
 #		if 0
 #			define	LIBFB_LIBES	LIBPKG -lMesaGL -lMesaGLU -lglut -L''XLIBDIR -lX11  -lXi -lXmu
