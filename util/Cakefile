@@ -1,7 +1,7 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 10.11 1994-01-14 21:57:34 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 10.12 1994-01-14 21:59:26 mike Exp $
  */
 
 #define SRCDIR	util
@@ -292,6 +292,9 @@ pix-ps: pix-ps.o
 
 pix-ppm: pix-ppm.o
 	CC LDFLAGS -o pix-ppm pix-ppm.o LIB_PRE''LIBFB LIBFB_LIBES LIBES
+
+pcd-pix: pcd-pix.o
+	CC LDFLAGS -o pcd-pix pcd-pix.o LIBES
 
 plstat: plstat.o
 	CC LDFLAGS -o plstat plstat.o LIB_PRE''LIBPLOT LIBES
