@@ -1,7 +1,7 @@
 /*
  *			conv/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 11.20 1999-04-05 13:52:03 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 11.21 1999-05-11 20:32:59 bparker Exp $
  */
 
 #define SRCDIR	conv
@@ -19,9 +19,6 @@
 #include "../Cakefile.prog"
 
 /* Explicit composition of each product */
-
-g-xxx: g-xxx.o LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBTCL_DEP LIBWDB_DEP
-	CC LDFLAGS g-xxx.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBTCL LIBTCL_LIBES LIBES -o g-xxx
 
 nmg-polysolid: nmg-polysolid.o LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBTCL_DEP LIBWDB_DEP
 	CC LDFLAGS nmg-polysolid.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBTCL LIBTCL_LIBES LIBES -o nmg-polysolid
