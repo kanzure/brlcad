@@ -1,7 +1,7 @@
 /*
  *			nirt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/nirt/Cakefile,v 1.4 1991-07-02 02:27:10 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/nirt/Cakefile,v 1.5 1991-07-18 16:14:38 pjt Exp $
  */
 #define CONFIGDEFS	RT_CONFIG -DDFLT_SHELL=\\\\"/bin/tbsh\\\\"
 
@@ -14,7 +14,7 @@
 #include "../Cakefile.prog"
 
 #define	NIRT_OBJ	\
-	nirt.o command.o conversion.o if.o interact.o dist_def.o \
+	nirt.o command.o conversion.o if.o interact.o bsphere.o \
 	read_mat.o str_manip.o parse_fmt.o
 
 nirt:	NIRT_OBJ LIBRT
