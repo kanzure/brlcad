@@ -6,7 +6,7 @@
 			Aberdeen Proving Ground
 			Maryland 21005-5066
 
-	$Header: /usr/Backup/upgrade/brlcad/brlcad/burst/Cakefile,v 1.14 1997-03-20 21:42:06 jra Exp $ (BRL)
+	$Header: /usr/Backup/upgrade/brlcad/brlcad/burst/Cakefile,v 1.15 1997-06-30 13:33:48 gdurf Exp $ (BRL)
 
  */
 /* Remove the following line if you have BRLCAD 4.0 or later. */
@@ -20,13 +20,13 @@
 #define MANSECTION	1
 #define FILES	burst error fb glob grid gridrotate idents\
 		paint plot prnt trie ui\
-		Hm HmGetc HmGlob Sc Tc
+		Hm HmGetc HmGlob Sc
 #include "../Cakefile.defs"
 #include "../Cakefile.prog"
 
 /* Explicit composition of each product */
-PRODUCTS:	OBJ LIBRT_DEP LIBBN_DEP LIBFB_DEP LIBBU_DEP
-	CC LDFLAGS -o burst OBJ LIBFB LIBFB_LIBES LIBRT LIBBN LIBBU LIBBU_LIBES LIBTERMLIB LIBES -lm
+PRODUCTS:	OBJ LIBRT_DEP LIBBN_DEP LIBFB_DEP LIBBU_DEP LIBTERMIO_DEP
+	CC LDFLAGS -o burst OBJ LIBFB LIBFB_LIBES LIBRT LIBBN LIBBU LIBBU_LIBES LIBTERMIO LIBTERMLIB LIBES -lm
 
 all&: PRODUCTS
 
