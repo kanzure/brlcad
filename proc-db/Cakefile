@@ -1,13 +1,15 @@
 /*
  *			proc-db/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 11.19 2000-06-23 02:26:35 butler Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 11.20 2001-08-06 15:54:44 morrison Exp $
  */
 
 #define SRCDIR	proc-db
 #define PRODUCTS	pyramid molecule clutter kurt room tube teapot \
 			pipetest nmgmodel brickwall wall tea_nmg \
-			pipe terrain sphflake fence bottest sketch wdb_example
+			pipe terrain sphflake fence bottest sketch \
+			globe wdb_example
+
 /* pickett_fence */
 
 #define STATIC_PRODUCTS		\
@@ -88,6 +90,9 @@ sphflake: sphflake.o LIBRT_DEP LIBBN_DEP LIBBU_DEP
 
 fence:	fence.o LIBRT_DEP LIBBN_DEP LIBBU_DEP
 	CC LDFLAGS fence.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBES -o fence
+
+globe:	globe.o LIBRT_DEP LIBBN_DEP LIBBU_DEP
+	CC LDFLAGS globe.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBES -o globe
 
 pickett_fence: pickett_fence.o LIBRT_DEP LIBBN_DEP LIBBU_DEP
 	CC LDFLAGS pickett_fence.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBES -o pickett_fence
