@@ -1,7 +1,7 @@
 /*
  *			conv/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 10.12 1994-10-12 00:43:57 butler Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 11.1 1995-01-04 09:59:47 mike Exp $
  */
 
 #define SRCDIR	conv

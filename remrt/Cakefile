@@ -1,7 +1,7 @@
 /*
  *			remrt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 10.9 1994-12-20 16:03:42 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 11.1 1995-01-04 10:04:04 mike Exp $
  */
 
 #define CONFIGDEFS	RFBD_CONFIG

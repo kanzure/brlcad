@@ -6,7 +6,7 @@
  *  find the symbol LIBFB_LIBES in ../Cakefile.defs in the section on
  *  the machine architecture you are using.
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libfb/Cakefile,v 10.2 1994-09-22 02:38:17 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libfb/Cakefile,v 11.1 1995-01-04 09:53:14 mike Exp $
  */
 
 #define	CONFIGDEFS	LIBFB_CONFIG
