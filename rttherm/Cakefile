@@ -1,9 +1,11 @@
 /*
  *			rttherm/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.31 1998-11-17 19:14:50 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.32 1998-11-17 22:52:43 mike Exp $
  */
-#define CONFIGDEFS	RT_CONFIG
+
+/* This shows up in CFLAGS */
+#define CONFIGDEFS	RT_CONFIG -DRT_MULTISPECTRAL
 
 #define SRCDIR	rttherm
 #define PRODUCTS	rttherm disp
@@ -28,7 +30,7 @@
 
 /* Specially compiled versions */
 refract.o: ../rt/refract.c
-	CC CFLAGS -DMULTISPECTRAL -c ../rt/refract.c
+	CC CFLAGS -c ../rt/refract.c
 
 /* Explicit composition of each product */
 
