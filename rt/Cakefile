@@ -1,7 +1,7 @@
 /*
  *			rt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 11.14 1996-09-17 04:37:31 butler Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 11.15 1997-01-08 03:30:51 mike Exp $
  */
 #define CONFIGDEFS	RT_CONFIG
 
@@ -134,6 +134,14 @@ rtdummy:	RTDUMMY_OBJ LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBFB_DEP
 	sh ../newvers.sh version "RT Dummy"
 	CC CFLAGS -c vers.c
 	CC LDFLAGS RTDUMMY_OBJ vers.o LIBRT LIBBN LIBBU LIBBU_LIBES LIBFB LIBFB_LIBES LIBES -o rtdummy
+
+#define RT3D_OBJ  RTUIF view3d.o
+
+rt3d:	RT3D_OBJ  LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBFB_DEP
+	sh ../newvers.sh version "RT 3D"
+	CC CFLAGS -c vers.c
+	CC LDFLAGS RT3D_OBJ vers.o LIBRT LIBBN LIBBU LIBBU_LIBES LIBFB LIBFB_LIBES LIBES -o rt3d
+
 
 rtexample:	rtexample.o LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBFB_DEP
 	CC LDFLAGS rtexample.o LIBRT LIBBN LIBBU LIBBU_LIBES LIBFB LIBFB_LIBES LIBES -o rtexample
