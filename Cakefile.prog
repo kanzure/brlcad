@@ -14,7 +14,7 @@
  *  Distribution Status -
  *	Public Domain, Distribution Unlimitied.
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.prog,v 10.3 1994-10-28 20:22:10 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.prog,v 10.4 1994-12-01 22:17:46 mike Exp $
  */
 
 /* Default rule */
@@ -29,12 +29,12 @@ everything&::	PRODUCTS
 
 /* lex always generates lex.yy.c */
 %.o:    ../SRCDIR/%.l			if exist ../SRCDIR/%.l
-	rm -f ./%.c lex.yy.c
+	-rm -f ./%.c lex.yy.c
         LEX LEX_OPTS ../SRCDIR/%.l
-	mv lex.yy.c ./%.c
+	-mv -f lex.yy.c ./%.c
 	CC CFLAGS -I. -c ./%.c
 
 %.o:    ../SRCDIR/%.y			if exist ../SRCDIR/%.y
-	rm -f ./%.c ./%.h
+	-rm -f ./%.c ./%.h
         YACC YACC_OPTS ../SRCDIR/%.y
 	CC CFLAGS -I. -c ./%.c
