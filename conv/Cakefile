@@ -1,14 +1,14 @@
 /*
  *			conv/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 10.11 1994-10-07 19:28:01 butler Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 10.12 1994-10-12 00:43:57 butler Exp $
  */
 
 #define SRCDIR	conv
 #define PRODUCTS	asc2g g2asc conv-vg2g pix2asc asc2pix euclid-g \
 			g-euclid euclid_format tankill-g g-tankill \
 			viewpoint-g dxf-g g-nmg g-euclid1 fast4-g proe-g \
-			asc-nmg
+			asc-nmg nmg-rib
 #define	SRCSUFF	.c
 #define MANSECTION	1
 
@@ -69,5 +69,8 @@ g-nmg:	g-nmg.o
 
 asc-nmg: asc-nmg.o
 	CC LDFLAGS asc-nmg.o LIBWDB LIBRT LIBRT_LIBES LIBES -o asc-nmg
+
+nmg-rib: nmg-rib.o
+	CC LDFLAGS nmg-rib.o LIBWDB LIBRT LIBRT_LIBES LIBES -o nmg-rib
 
 #include "../Cakefile.rules"
