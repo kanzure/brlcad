@@ -1,7 +1,7 @@
 /*
  *			mged/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/mged/Cakefile,v 11.44 2000-02-18 21:20:58 bparker Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/mged/Cakefile,v 11.45 2000-02-18 23:30:33 bparker Exp $
  */
 #define       CONFIGDEFS      MGED_CONFIG "-Dyylex=cmd_nop"
 
@@ -31,11 +31,11 @@
 
 #if HAS_TCP
 #    define COMPLETE_LIBES	\
-	MGED_LIBES LIBFB LIBPKG LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBTERMIO LIBES
+	LIBFB LIBPKG LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBTERMIO MGED_LIBES LIBES
 #    define	TCP_FILES	vrlink
 #else
 #    define COMPLETE_LIBES	\
-	MGED_LIBES LIBFB LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBTERMIO LIBES
+	LIBFB LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBTERMIO MGED_LIBES LIBES
 #    define	TCP_FILES	/**/
 #endif
 
