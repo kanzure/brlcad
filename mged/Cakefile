@@ -1,7 +1,7 @@
 /*
  *			mged/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/mged/Cakefile,v 11.48 2001-04-02 21:20:40 bparker Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/mged/Cakefile,v 11.49 2001-05-04 14:20:45 bparker Exp $
  */
 #define       CONFIGDEFS      MGED_CONFIG "-Dyylex=cmd_nop"
 
@@ -19,7 +19,7 @@
 			proc_reg polyif red \
 			mater plot overlay inside \
 			concat utility1 utility2 track arbs \
-			facedef set animedit comb_std \
+			facedef set animedit \
 			solids_on_ray history \
 			TCP_FILES attach dm-plot dm-ps muves \
 			MGED_OBJS vdraw fbserv rect grid axes qray \
