@@ -6,14 +6,14 @@
  *  find the symbol LIBFB_LIBES in ../Cakefile.defs in the section on
  *  the machine architecture you are using.
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libfb/Cakefile,v 11.1 1995-01-04 09:53:14 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libfb/Cakefile,v 11.2 1996-12-13 13:56:04 jra Exp $
  */
 
 #define	CONFIGDEFS	LIBFB_CONFIG
 
 #define PRODUCTS	libfb.ARCH_SUF
 #define SRCDIR	libfb
-#define FILES	fb_generic fb_log fb_paged_io fb_rect fb_util getput asize \
+#define FILES	fb_generic fb_log fb_paged_io fb_rect fb_util getput \
 		if_disk if_debug if_stack if_mem if_null LIBFB_OBJS
 #define	SRCSUFF	.c
 #define MANSECTION	3
