@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.123 1998-09-22 01:44:59 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.124 1998-09-22 02:20:42 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -1846,6 +1846,9 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	LIBOPTICAL_DIR	../liboptical
 #	define	LIBOPTICAL	-L''LIBOPTICAL_DIR -loptical
 #	define	LIBOPTICAL_DEP	[[LIBVERS ../liboptical/liboptical.ARCH_SUF]]
+#	define	LIBMULTISPECTRAL_DIR	../libmultispectral
+#	define	LIBMULTISPECTRAL	-L''LIBMULTISPECTRAL_DIR -lmultispectral
+#	define	LIBMULTISPECTRAL_DEP	[[LIBVERS ../libmultispectral/libmultispectral.ARCH_SUF]]
 #	define	LIBBU_DIR	../libbu
 #	define	LIBBU		-L''LIBBU_DIR -lbu
 #	define	LIBBU_DEP	[[LIBVERS ../libbu/libbu.ARCH_SUF]]
@@ -1931,6 +1934,9 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	LIBOPTICAL_DIR	../.liboptical.MTYPE
 #	define	LIBOPTICAL	-L''LIBOPTICAL_DIR -loptical
 #	define	LIBOPTICAL_DEP	[[LIBVERS ../.liboptical.MTYPE/liboptical.ARCH_SUF]]
+#	define	LIBMULTISPECTRAL_DIR	../.libmultispectral.MTYPE
+#	define	LIBMULTISPECTRAL	-L''LIBMULTISPECTRAL_DIR -lmultispectral
+#	define	LIBMULTISPECTRAL_DEP	[[LIBVERS ../.libmultispectral.MTYPE/libmultispectral.ARCH_SUF]]
 #	define	LIBBU_DIR	../.libbu.MTYPE
 #	define	LIBBU		-L''LIBBU_DIR -lbu
 #	define	LIBBU_DEP	[[LIBVERS ../.libbu.MTYPE/libbu.ARCH_SUF]]
