@@ -1,13 +1,13 @@
 /*
  *			remrt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 11.13 1997-06-11 01:15:19 gdurf Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 11.14 1997-07-01 19:51:35 mike Exp $
  */
 
 #define CONFIGDEFS	RFBD_CONFIG
 
 #define SRCDIR	remrt
-#define PRODUCTS	remrt rtsrv rtsync rtnode
+#define PRODUCTS	remrt rtsrv rtsync rtnode rtmon
 #define	SRCSUFF	.c
 #define MANSECTION	1
 
@@ -81,5 +81,8 @@ rtsync:  rtsync.o ihost.o LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBTCL_DEP LIBFB_DEP
 /* Uses standard view.o */
 rtnode:  rtnode.o sh_tcl.o RTDIR/view.o LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBTCL_DEP LIBFB_DEP
 	CC LDFLAGS -o rtnode rtnode.o sh_tcl.o RTDIR/view.o RTSRV_PIECES LIBFB LIBFB_LIBES
+
+rtmon:  rtmon.o ihost.o LIBBU_DEP
+	CC LDFLAGS -o rtmon rtmon.o ihost.o LIBBU LIBBU_LIBES LIBES
 
 #include "../Cakefile.rules"
