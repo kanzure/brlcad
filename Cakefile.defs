@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.78 1994-12-20 14:03:16 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.79 1994-12-20 14:53:51 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -290,12 +290,13 @@ set -S2 "/bin/sh"
 /*		Warning 1032 is "expression must have arithmetic type". */
 #		define	OPTIMIZER	-O2 -OPT:fold_arith_limit=16000 \
 					-OPT:const_copy_limit=16000 \
+					-use_readonly_const \
 					-woff 1032,1174 -Wl,-w2
 /*		-Wl,-S doesn't work! use -Wl,-w2.  SGI case #0390575. */
 #	else
 /*		This version for debugging with DBX */
 /*		-fullwarn is pretty verbose */
-#		define	OPTIMIZER	-g
+#		define	OPTIMIZER	-g -use_readonly_const
 #	endif
 #	define	GFLAG		-64 -KPIC
 #	define	XLIBDIR		/usr/lib64
