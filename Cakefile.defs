@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.237 2001-10-24 22:40:50 morrison Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.238 2001-10-29 14:54:01 jra Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -314,7 +314,7 @@ set -S2 "/bin/sh"
 #	endif
 #	define	GFLAG	-n32 -KPIC -G 0
 #	define  XINCDIR /usr/include/X11
-#	define	XLIBDIR /usr/lib
+#	define	XLIBDIR /usr/lib32
 #	if BUILD_SHARED	/* PRODUCTION=1 */
 /*		Shared library version support */
 #		define	ARCH_SUF	so
@@ -322,7 +322,7 @@ set -S2 "/bin/sh"
 #		define	LDSHARED	ld -n32 -shared
 #		define	BUILD_LIBRARY	LDSHARED -o
 #		define	RANLIB	true
-#		define	STANDARD_LIBES	-lm -rpath LIBDIR:/usr/lib -lmalloc -lc
+#		define	STANDARD_LIBES	-lm -rpath LIBDIR:/usr/lib32  /* -lmalloc -lc */
 /*		When debugging libraries, -m and -v are helpful LD_OPTS */
 /*		Warning 84:  library not used for resolving any symbol */
 /*		Warning 85: definition in one library preempts that in another */
