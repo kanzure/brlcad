@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.250 2002-03-15 00:25:33 kermit Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.251 2002-03-19 16:34:09 kermit Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -1107,7 +1107,7 @@ set -S2 "/bin/sh"
 #	define	CC_DEFS -pipe -fPIC -Wall -pedantic
 #	define	LEX_OPTS	-l
 #	if BUILD_OPTIMIZED	
-#		define	OPTIMIZER	-O3 -fno-strict-aliasing
+#		define	OPTIMIZER	-O3 -fomit-frame-pointer -fno-strict-aliasing
 #	else
 #		define	OPTIMIZER	-O -g
 #		define	PROFILER	-pg  /* gprof profiling -- build staticly to include libraries */
