@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.27 1994-08-25 09:10:39 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.28 1994-08-25 14:21:08 gdurf Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -577,7 +577,7 @@ set -S2 "/bin/sh"
 #		endif
 /*		Shared library support on Sun compiler */
 #		define	ARCH_SUF	so
-#		define	LIBVERS		[[../sharedlibvers.sh]]
+#		define	LIBVERS		../sharedlibvers.sh
 #		define	BUILD_LIBRARY	ld -Bdynamic -o
 #		define	RANLIB		/**/
 #	else
@@ -699,7 +699,7 @@ set -S2 "/bin/sh"
 # if 1
 /*	Shared library support */
 #	define	ARCH_SUF	so
-#	define	LIBVERS		[[../sharedlibvers.sh]]
+#	define	LIBVERS		../sharedlibvers.sh
 #	define	BUILD_LIBRARY	ld -Bdynamic -o
 #	define	RANLIB		/**/
 #	define	STANDARD_LIBES	-L''LIBDIR -lm
@@ -756,10 +756,11 @@ set -S2 "/bin/sh"
 /*		"Unbundled" (i.e. "improved") compilers.  Use if you have them */
 #		define	CC	/usr/lang/cc
 #		define	FC	/usr/lang/f77
-#	else
-#		define	FC	/usr/gnu/bin/f77
 #	endif
 #   endif	/* __STDC__ */
+#   ifndef FC
+#	define FC	/usr/gnu/bin/f77
+#   endif
 #endif
 
 #ifdef NeXT
