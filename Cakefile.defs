@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.40 1991-09-23 03:33:29 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.41 1991-09-26 05:40:14 phil Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -200,17 +200,20 @@ set -S2 "/bin/sh"
 #endif
 
 #ifdef i386
-/*	IBM PC or clone, probably running Xenix */
-#	define	MTYPE   at
-#	define	HAS_TCP 1
+/*	IBM PC or clone, running SysV R3 */
+#	define	MTYPE	at
+#	define	HAS_TCP	1
 #	define	LIBRT_TIMER	timerunix
-#	define	LIBFB_CONFIG	-DIF_X -DIF_REMOTE -DIF_PTTY
-#	define	LIBFB_OBJS	if_X pkg if_ptty if_remote
-#	define	LIBFB_SETUP	cp /usr/lib/libX11.a PRODUCTS
-#	define	MGED_OBJS	dm-X
-#	define	MGED_CONFIG	-DDM_X
-#	define	MGED_LIBES	/usr/lib/libX11.a -linet
-#	define	STANDARD_LIBES	-lm -linet
+#	define	CC	/usr/bin/cc
+#	define	CC_OPTS
+#	define	LIBPKG_CONFIG	-DBSD=42
+#	define	LIBFB_CONFIG	-DIF_REMOTE
+#	define	LIBFB_OBJS	if_remote
+#	define	LIBFB_LIBES	LIBPKG -lsocket
+#	define	MGED_OBJS
+#	define	MGED_CONFIG
+#	define	MGED_LIBES	-lsocket
+#	define	STANDARD_LIBES	-lm
 #endif
 
 #if defined(alliant) && !defined(i860)
