@@ -1,7 +1,7 @@
 /*
  *			patch/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/patch/Cakefile,v 11.2 1996-08-27 05:46:44 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/patch/Cakefile,v 11.3 1996-08-31 11:42:45 mike Exp $
  */
 #define SRCDIR	patch
 #define PRODUCTS	patch-g rpatch
@@ -12,7 +12,7 @@
 #include "../Cakefile.prog"
 
 patch-g:	patch-g.o
-	CC LDFLAGS  patch-g.o LIBWDB LIBRT LIBBU LIBBU_LIBES LIBES -o patch-g
+	CC LDFLAGS  patch-g.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBES -o patch-g
 
 rpatch:		rpatch.o
 	CC LDFLAGS  rpatch.o -o rpatch
