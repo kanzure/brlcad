@@ -1,9 +1,10 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.19 1997-05-02 12:48:07 bparker Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.20 1997-09-10 19:29:00 gdurf Exp $
  */
 
+#define STATIC_PRODUCTS morphedit.tcl
 #define SRCDIR	util
 #define PRODUCTS	\
 	alias-pix ap-pix asc-pl azel bary buffer dbcp \
