@@ -1,7 +1,7 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 10.3 1992-03-16 21:58:38 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 10.4 1992-05-08 22:14:27 mike Exp $
  */
 
 #define SRCDIR	util
@@ -20,7 +20,7 @@
 	pixfade pixfields pixfilter pixhalve pixhist \
 	pixhist3d-pl pixhist3d pixinterp2x pixmatte pixmerge \
 	pixrect pixrot pixsaturate pixscale pixshrink pixstat \
-	pixtile pixuntile \
+	pixtile pixuntile pixembed \
 	pl-asc pl-hpgl \
 	pl-pl pl-tek pl-ps pl-sgi \
 	plcolor pldebug plgetframe plline2 plrot plstat \
@@ -180,6 +180,9 @@ pixrot:		pixrot.o
 
 pixscale:	pixscale.o
 	CC LDFLAGS -o pixscale pixscale.o LIBES
+
+pixembed:	pixembed.o
+	CC LDFLAGS -o pixembed pixembed.o LIBES
 
 pixstat:	pixstat.o
 	CC LDFLAGS -o pixstat pixstat.o LIBES
