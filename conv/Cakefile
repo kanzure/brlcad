@@ -1,7 +1,7 @@
 /*
  *			conv/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 11.11 1998-05-13 13:25:00 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 11.12 1998-05-22 12:42:34 jra Exp $
  */
 
 #define SRCDIR	conv
@@ -9,7 +9,7 @@
 			g-euclid euclid_format euclid_unformat tankill-g g-tankill \
 			viewpoint-g dxf-g g-nmg g-euclid1 fast4-g proe-g \
 			asc-nmg nmg-rib g-vrml g-acad cy-g nastran-g g-wave \
-			nmg-polysolid
+			nmg-polysolid g-shell.rect
 #define	SRCSUFF	.c
 #define MANSECTION	1
 
