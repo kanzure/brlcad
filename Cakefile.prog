@@ -14,7 +14,7 @@
  *  Distribution Status -
  *	Public Domain, Distribution Unlimitied.
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.prog,v 11.1 1995-01-04 09:43:30 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.prog,v 11.2 1995-08-10 20:15:29 gdurf Exp $
  */
 
 /* Default rule */
@@ -44,4 +44,5 @@ everything&::	PRODUCTS
 %.o:    ../SRCDIR/%.y			if exist ../SRCDIR/%.y
 	-rm -f ./%.c ./%.h ./%.o
         YACC YACC_OPTS ../SRCDIR/%.y
+	mv ./y.tab.c ./%.c
 	CC CFLAGS -I. -c ./%.c
