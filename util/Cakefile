@@ -1,7 +1,7 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 10.1 1991-10-12 06:49:26 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 10.2 1992-03-16 21:57:19 mike Exp $
  */
 
 #define SRCDIR	util
@@ -64,7 +64,8 @@ pixbustup:	pixbustup.o
 
 /* The difficulty here is obtaining the random number tables */
 pixfade:	pixfade.o
-	CC LDFLAGS -o pixfade pixfade.o CFLAGS ../rt/mathtab.c LIBES
+	CC CFLAGS -c ../rt/mathtab.c
+	CC LDFLAGS -o pixfade pixfade.o mathtab.o LIBES
 
 pixfields:	pixfields.o
 	CC LDFLAGS -o pixfields pixfields.o LIBES
