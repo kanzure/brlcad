@@ -1,16 +1,17 @@
 /*
  *			proc-db/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 9.8 1991-07-24 20:18:29 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 9.9 1991-09-20 23:22:44 mike Exp $
  */
 
 #define SRCDIR	proc-db
 #define PRODUCTS	pyramid molecule clutter kurt room tube teapot \
 			pipetest nmgmodel brickwall wall
 #define STATIC_PRODUCTS		\
-	../SRCDIR/mol-data ../SRCDIR/mol-data1 ../SRCDIR/mol-data2 \
-	../SRCDIR/mol-cube \
-	../SRCDIR/mol-gfa2 ../SRCDIR/mol-gfa3
+	../SRCDIR/mol-data.dat ../SRCDIR/mol-data1.dat \
+	../SRCDIR/mol-data2.dat \
+	../SRCDIR/mol-cube.dat \
+	../SRCDIR/mol-gfa2.dat ../SRCDIR/mol-gfa3.dat
 #define	SRCSUFF	.c
 #define MANSECTION	1
 
