@@ -2,109 +2,109 @@
 cc-1174 cc: WARNING File = act.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = chase.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = entry.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = error.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = expand.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = file.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = list.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = main.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = make.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = mem.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = pat.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = print.c, Line = 8
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = proc.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = sym.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = sys.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = table.c, Line = 11
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = test.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = trail.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1116 cc: WARNING File = cake_s.l, Line = 204
@@ -345,13 +345,13 @@ cake installed
 cc-1174 cc: WARNING File = cakesub.c, Line = 6
   The variable "rcs_id" was declared but never referenced.
 
-  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $";
+  rcs_id[] = "$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $";
   ^
 
 cc-1174 cc: WARNING File = cakeinclude.c, Line = 43
   The variable "RCSid" was declared but never referenced.
 
-  static char RCSid[] = "@(#)$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $ (BRL)";
+  static char RCSid[] = "@(#)$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $ (BRL)";
               ^
 
 Done making cake and cakeaux
@@ -768,7 +768,7 @@ iwidgets3.0.0: make all
 cc-1174 cc: WARNING File = ../libtclcad/tkImgFmtPIX.c, Line = 34
   The variable "RCSid" was declared but never referenced.
 
-  static const char RCSid[] = "@(#)$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.1 2001-09-25 10:31:04 morrison Exp $ (ARL)";
+  static const char RCSid[] = "@(#)$Header: /usr/Backup/upgrade/brlcad/brlcad/regress/ref_m4i65,v 1.2 2001-09-25 10:34:13 morrison Exp $ (ARL)";
                     ^
 
 -------------------------------- .conv.m4i65
