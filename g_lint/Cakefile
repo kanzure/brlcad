@@ -1,11 +1,11 @@
 /*
  *		CAKE(1) specification file for G_LINT(1)
  *
- * $Header: /usr/Backup/upgrade/brlcad/brlcad/g_lint/Cakefile,v 1.3 1999-01-26 22:12:55 mike Exp $
+ * $Header: /usr/Backup/upgrade/brlcad/brlcad/g_lint/Cakefile,v 1.4 1999-02-05 04:09:51 butler Exp $
  */
 
 #define	SRCDIR	g_lint
-#define	PRODUCTS	g_lint solshoot testfree
+#define	PRODUCTS	g_lint
 #define	SRCSUFF		.c
 #define	MANSECTION	1
 
