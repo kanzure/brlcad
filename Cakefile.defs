@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.210 2000-11-03 14:01:30 bparker Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.211 2000-12-06 21:54:35 bparker Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -82,10 +82,10 @@ set -S2 "/bin/sh"
 #define NFS	1
 
 /* This is the version of Tcl/Tk distributed with BRL-CAD */
-#define	TCLTK_VERS	8.2
+#define	TCLTK_VERS	8.3
 
 /* This is the version of [incr Tcl] distributed with BRL-CAD */
-#define ITCL_VERS	3.0
+#define ITCL_VERS	3.2
 #define LIBTCL_LIBES	LIBITCL
 #define LIBTK_LIBES	LIBITK
 
@@ -2120,24 +2120,24 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	LIBSYSV		-L''LIBSYSV_DIR -lsysv
 #	define	LIBSYSV_DEP	[[LIBVERS ../libsysv/libsysv.ARCH_SUF]]
 #    if !defined(LIBTCL)
-#	define	LIBTCL_DIR	../libtcl
+#	define	LIBTCL_DIR	../libtcl''TCLTK_VERS
 #	define	LIBTCL		-L''LIBTCL_DIR -ltcl''TCLTK_VERS
-#	define	LIBTCL_DEP	[[LIBVERS ../libtcl/libtcl''TCLTK_VERS.''ARCH_SUF]]
+#	define	LIBTCL_DEP	[[LIBVERS LIBTCL_DIR/libtcl''TCLTK_VERS.''ARCH_SUF]]
 #    endif
 #    if !defined(LIBTK)
-#	define	LIBTK_DIR	../libtk
+#	define	LIBTK_DIR	../libtk''TCLTK_VERS
 #	define	LIBTK		-L''LIBTK_DIR -ltk''TCLTK_VERS
-#	define	LIBTK_DEP	[[LIBVERS ../libtk/libtk''TCLTK_VERS.''ARCH_SUF]]
+#	define	LIBTK_DEP	[[LIBVERS LIBTK_DIR/libtk''TCLTK_VERS.''ARCH_SUF]]
 #    endif
 #    if !defined(LIBITCL)
-#	define	LIBITCL_DIR	../libitcl/itcl/\u\n\i\x
+#	define	LIBITCL_DIR	../libitcl''ITCL_VERS/itcl
 #	define	LIBITCL		-L''LIBITCL_DIR -litcl''ITCL_VERS
-#	define	LIBITCL_DEP	[[LIBVERS ../libitcl/libitcl''ITCL_VERS.''ARCH_SUF]]
+#	define	LIBITCL_DEP	[[LIBVERS LIBITCL_DIR/libitcl''ITCL_VERS.''ARCH_SUF]]
 #    endif
 #    if !defined(LIBITK)
-#	define	LIBITK_DIR	../libitcl/itk/\u\n\i\x
+#	define	LIBITK_DIR	../libitcl''ITCL_VERS/itk
 #	define	LIBITK		-L''LIBITK_DIR -litk''ITCL_VERS
-#	define	LIBITK_DEP	[[LIBVERS ../libitcl/libitk''ITCL_VERS.''ARCH_SUF]]
+#	define	LIBITK_DEP	[[LIBVERS LIBITK_DIR/libitk''ITCL_VERS.''ARCH_SUF]]
 #    endif
 #	define  LIBTCLCAD_DIR	../libtclcad
 #	define  LIBTCLCAD	-L''LIBTCLCAD_DIR -ltclcad
@@ -2224,22 +2224,22 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	LIBSYSV		-L''LIBSYSV_DIR -lsysv
 #	define	LIBSYSV_DEP	[[LIBVERS ../.libsysv.MTYPE/libsysv.ARCH_SUF]]
 #    if !defined(LIBTCL)
-#	define	LIBTCL_DIR	../.libtcl.MTYPE
+#	define	LIBTCL_DIR	../.libtcl''TCLTK_VERS.''MTYPE
 #	define	LIBTCL		-L''LIBTCL_DIR -ltcl''TCLTK_VERS
-#	define	LIBTCL_DEP	[[LIBVERS ../.libtcl.MTYPE/libtcl''TCLTK_VERS.''ARCH_SUF]]
+#	define	LIBTCL_DEP	[[LIBVERS LIBTCL_DIR/libtcl''TCLTK_VERS.''ARCH_SUF]]
 #    endif
 #    if !defined(LIBTK)
-#	define	LIBTK_DIR	../.libtk.MTYPE
+#	define	LIBTK_DIR	../.libtk''TCLTK_VERS.''MTYPE
 #	define	LIBTK		-L''LIBTK_DIR -ltk''TCLTK_VERS
-#	define	LIBTK_DEP	[[LIBVERS ../.libtk.MTYPE/libtk''TCLTK_VERS.''ARCH_SUF]]
+#	define	LIBTK_DEP	[[LIBVERS LIBTK_DIR/libtk''TCLTK_VERS.''ARCH_SUF]]
 #    endif
 #    if !defined(LIBITCL)
-#	define	LIBITCL_DIR	../.libitcl.MTYPE/itcl/\u\n\i\x
+#	define	LIBITCL_DIR	../.libitcl''ITCL_VERS.''MTYPE/itcl
 #	define	LIBITCL		-L''LIBITCL_DIR -litcl''ITCL_VERS
 #	define	LIBITCL_DEP	[[LIBVERS LIBITCL_DIR/libitcl''ITCL_VERS.''ARCH_SUF]]
 #    endif
 #    if !defined(LIBITK)
-#	define	LIBITK_DIR	../.libitcl.MTYPE/itk/\u\n\i\x
+#	define	LIBITK_DIR	../.libitcl''ITCL_VERS.''MTYPE/itk
 #	define	LIBITK		-L''LIBITK_DIR -litk''ITCL_VERS
 #	define	LIBITK_DEP	[[LIBVERS LIBITK_DIR/libitk''ITCL_VERS.''ARCH_SUF]]
 #    endif
