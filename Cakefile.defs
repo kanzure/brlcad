@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.129 1998-12-30 22:51:18 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.130 1998-12-31 01:18:07 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -885,7 +885,14 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	LIBDM_SAMPLER_LIBES MGED_LIBES
 #       define  LIBBU_CONFIG    -DBRLCAD_ROOT='"'BASEDIR'"'
 #	define	LIBBU_LIBES	LIBTCL LIBTCL_LIBES
+/*	Use the system-provided TCL and Tk libraries */
+#	define	LIBTCL_DIR	_use_system_tcl_
+#	define	LIBTCL		-ltcl8.0
+#	define	LIBTCL_DEP	/**/
 #	define	LIBTCL_LIBES	-ldl
+#	define	LIBTK_DIR	_use_system_tk_
+#	define	LIBTK		-ltk8.0
+#	define	LIBTK_DEP	/**/
 #endif
 
 #if defined(__CAKE__fbsd)
