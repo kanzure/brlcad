@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.268 2004-03-04 15:56:31 morrison Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.269 2004-03-04 15:57:29 morrison Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -1207,7 +1207,6 @@ set -S2 "/bin/sh"
 /* -Wmissing-prototypes -Wstrict-prototypes  -Wmissing-declarations -W -pedantic -ansi*/
 #	if BUILD_SHARED	
 #		error "ERROR: Building with shared libraries is not supported via cake"
-#		error "       (use ProjectBuilder)"
 /*		Shared library version support.  */
 /*		PowerPC code is position-independant by default (and by design) (i.e. no nee d for -fPIC) */
 /* #		define	ARCH_SUF	so */
