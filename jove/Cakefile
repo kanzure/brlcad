@@ -1,7 +1,7 @@
 /*
  *			jove/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/jove/Cakefile,v 11.3 1997-01-03 18:01:43 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/jove/Cakefile,v 11.4 1997-03-20 20:41:36 jra Exp $
  */
 
 #define SRCDIR	jove
@@ -61,8 +61,8 @@ FRC:
 	if test ! -f version.number ; then echo 0 > version.number; fi
 	c=`cat version.number`; \
 	rm -f version.number ../SRCDIR/version.c; \
-	echo $$c | \
-		awk '{version = \$1 + 1; };END{printf "\%d\n", version > "version.number"; }'; \
+	echo $c | \
+		awk '{version = \$1 + 1; };END{printf "\%d\\\\n", version > "version.number"; }'; \
 	c=`cat version.number`; \
 	echo "char	version[] = \\\\"2.$c\\\\";" > ../SRCDIR/version.c
 	touch FRC
