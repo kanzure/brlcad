@@ -1,7 +1,7 @@
 /*
  *			rt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 10.7 1994-09-21 04:32:10 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 10.8 1994-10-31 22:15:02 mike Exp $
  */
 #define CONFIGDEFS	RT_CONFIG
 
@@ -23,7 +23,7 @@
 	shade sh_text sh_cloud mathtab \
 	material refract sh_stack \
 	sh_plastic sh_cook wray sh_spm sh_light \
-	sh_marble sh_stxt sh_points sh_toyota
+	sh_marble sh_wood sh_stxt sh_points sh_toyota
 
 /*  The "top-half" (user interface) for the RT family of programs */
 #define RTUIF	main.o opt.o do.o worker.o mathtab.o
