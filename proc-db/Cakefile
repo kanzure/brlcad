@@ -1,7 +1,7 @@
 /*
  *			proc-db/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 11.16 2000-01-31 13:45:31 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 11.17 2000-03-02 16:00:03 jra Exp $
  */
 
 #define SRCDIR	proc-db
@@ -37,9 +37,6 @@ bottest:	bottest.o
 
 pipe:	pipe.o
 	CC LDFLAGS  pipe.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBES -o pipe
-
-platetest:	platetest.o
-	CC LDFLAGS  platetest.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBES -o platetest
 
 tube:	tube.o 
 	CC LDFLAGS  tube.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBES -o tube
