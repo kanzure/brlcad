@@ -7,7 +7,7 @@
  *			Maryland 21005-5066
  *			(301)278-6651 or AV-298-6651
  *
- *	$Header: /usr/Backup/upgrade/brlcad/brlcad/burst/Cakefile,v 1.3 1989-10-31 12:20:20 moss Exp $ (BRL)
+ *	$Header: /usr/Backup/upgrade/brlcad/brlcad/burst/Cakefile,v 1.4 1990-08-22 09:40:20 moss Exp $ (BRL)
  *
  * FONTDIR is pathname to font file (times.r.6) which is included with sources
  * but on real BSD systems is found in /usr/lib/vfont.
@@ -36,7 +36,7 @@ Tc/libTc.a:
 	cd Tc; make
 
 PRODUCTS:	OBJ MYLIBES
-	CC LDFLAGS -o burst OBJ LIBRT RT_LIBES LIBFB LIBTERMLIB LIBES MYLIBES -ltermlib -lm
+	CC LDFLAGS -o burst OBJ LIB_PRE''LIBRT RT_LIBES LIB_PRE''LIBFB LIBTERMLIB LIBES MYLIBES -ltermlib -lm
 
 test&:	PRODUCTS
 	./burst < tfiles/ktank.in
