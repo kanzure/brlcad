@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.245 2002-03-11 14:47:11 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.246 2002-03-11 15:16:04 jra Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -297,7 +297,7 @@ set -S2 "/bin/sh"
 /*		Warning 1110 is "statement is unreachable" */
 /*		Warning 1048 is "cast between pointer-to-object and pointer-to-function" */
 #		define	OPTIMIZER	-O2 \
-					-OPT:Olimit 2000 \
+					-OPT:Olimit=2000 \
 					-use_readonly_const
 #	else
 /*		This version for debugging with DBX */
