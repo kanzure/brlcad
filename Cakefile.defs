@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.37 1996-01-04 07:32:33 gdurf Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.38 1996-01-05 12:25:12 gdurf Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -1556,6 +1556,9 @@ set -S2 "/bin/sh"
 #	define	LIBTK_DIR	../libtk
 #	define	LIBTK		-L''LIBTK_DIR -ltk
 #	define	LIBTK_DEP	[[LIBVERS ../libtk/libtk.ARCH_SUF]]
+#	define  LIBTCLCAD_DIR	../libtclcad
+#	define  LIBTCLCAD	-L''LIBTCLCAD_DIR -ltclcad
+#	define	LIBTCLCAD_DEP	[[LIBVERS ../libtclcad/libtclcad.ARCH_SUF]]
 #	define	LIBREDBLACK_DIR	../libredblack
 #	define	LIBREDBLACK	-L''LIBREDBLACK_DIR -lredblack
 #	define	LIBREDBLACK_DEP	[[LIBVERS ../libredblack/libredblack.ARCH_SUF]]
@@ -1618,6 +1621,9 @@ set -S2 "/bin/sh"
 #	define	LIBTK_DIR	../.libtk.MTYPE
 #	define	LIBTK		-L''LIBTK_DIR -ltk
 #	define	LIBTK_DEP	[[LIBVERS ../.libtk.MTYPE/libtk.ARCH_SUF]]
+#	define	LIBTCLCAD_DIR	../.libtclcad.MTYPE
+#	define	LIBTCLCAD	-L''LIBTCLCAD_DIR -ltclcad
+#	define	LIBTCLCAD_DEP	[[LIBVERS ../.libtclcad.MTYPE/libtclcad.ARCH_SUF]]
 #	define	LIBREDBLACK_DIR	../.libredblack.MTYPE
 #	define	LIBREDBLACK	-L''LIBREDBLACK_DIR -lredblack
 #	define	LIBREDBLACK_DEP	[[LIBVERS ../.libredblack.MTYPE/libredblack.ARCH_SUF]]
