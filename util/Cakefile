@@ -1,7 +1,7 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.20 1997-09-10 19:29:00 gdurf Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.21 1997-12-03 07:11:07 mike Exp $
  */
 
 #define STATIC_PRODUCTS morphedit.tcl
@@ -30,7 +30,7 @@
 	pl-pl pl-tek pl-ps pl-sgi \
 	plcolor pldebug plgetframe plline2 plrot plstat \
 	query rle-pix sgi-pix sun-pix xyz-pl msrandom pixblend pixmorph \
-	pixborder mst texturescale pixclump
+	pixborder mst texturescale pixclump imgdims
 
 /* SGI specific goodies: pix-ci */
 /* X11 specific program:  pl-X */
@@ -375,5 +375,8 @@ pixborder:	pixborder.o LIBBN_DEP LIBBU_DEP LIBFB_DEP
 
 pixclump:	pixclump.o LIBBN_DEP LIBBU_DEP LIBFB_DEP
 	CC LDFLAGS -o pixclump pixclump.o LIBFB LIBFB_LIBES LIBBN LIBBU LIBBU_LIBES LIBES
+
+imgdims:	imgdims.o LIBBN_DEP LIBBU_DEP
+	CC LDFLAGS -o imgdims imgdims.o LIBBN LIBBU LIBES
 
 #include "../Cakefile.rules"
