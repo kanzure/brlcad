@@ -533,7 +533,7 @@ else
 fi
 
 
-# RCS: @(#) $Id: configure,v 1.8 1999-10-19 19:36:24 jra Exp $
+# RCS: @(#) $Id: configure,v 1.9 1999-11-02 19:48:04 bparker Exp $
 
 TCL_VERSION=8.2
 TCL_MAJOR_VERSION=8
@@ -4964,7 +4964,7 @@ fi
 	    DL_OBJS="tclLoadDl.o"
 	    DL_LIBS=""
 	    LDFLAGS=""
-	    LD_SEARCH_FLAGS=""
+	    LD_SEARCH_FLAGS='-Wl,-rpath,${LIB_RUNTIME_DIR}'
 	    ;;
 	NEXTSTEP-*)
 	    SHLIB_CFLAGS=""
