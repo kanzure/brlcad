@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.199 2000-08-22 21:26:43 butler Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.200 2000-08-29 02:33:38 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -909,7 +909,7 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	if 1	/* PRODUCTION=1 */
 /*		Shared library version support.  Requires ELF for Linux. */
 #		define	CC	gcc
-#		define	CC_OPTS -fPIC -Wall
+#		define	CC_DEFS -pipe -fPIC -Wall
 #		define	ARCH_SUF	so
 #		define	LIBVERS ../sh/sharedlibvers.sh
 #		define	BUILD_LIBRARY	gcc -shared -o
@@ -920,7 +920,7 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #		define	CC	gcc
 #		define	RANLIB	ar -s
 /*		Don't use -ansi, that gives __STRICT_ANSI__.  Default is _GNU_SOURCE. */
-#		define	CC_OPTS -Wall
+#		define	CC_DEFS -pipe -Wall
 #	endif
 #	define	XINCDIR	/usr/X11R6/include
 #	define	XLIBDIR	/usr/X11R6/lib
