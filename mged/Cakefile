@@ -1,7 +1,7 @@
 /*
  *			mged/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/mged/Cakefile,v 11.49 2001-05-04 14:20:45 bparker Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/mged/Cakefile,v 11.50 2001-06-01 19:23:22 bparker Exp $
  */
 #define       CONFIGDEFS      MGED_CONFIG "-Dyylex=cmd_nop"
 
@@ -16,7 +16,7 @@
 			cmd chgview chgmodel chgtree \
 			rtif anal typein predictor \
 			buttons menu adc edsol edarb edpipe edars \
-			proc_reg polyif red \
+			polyif red \
 			mater plot overlay inside \
 			concat utility1 utility2 track arbs \
 			facedef set animedit \
