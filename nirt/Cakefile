@@ -1,9 +1,9 @@
 /*
  *			nirt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/nirt/Cakefile,v 10.3 1994-09-21 04:42:12 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/nirt/Cakefile,v 10.4 1994-12-30 03:37:50 mike Exp $
  */
-#define CONFIGDEFS	RT_CONFIG -DDFLT_SHELL=\\\\"/bin/tbsh\\\\"
+#define CONFIGDEFS	RT_CONFIG -DDFLT_SHELL=\\\\"/bin/sh\\\\"
 
 #define SRCDIR	nirt
 #define PRODUCTS	nirt
