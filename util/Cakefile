@@ -1,7 +1,7 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 10.10 1993-12-09 05:52:39 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 10.11 1994-01-14 21:57:34 mike Exp $
  */
 
 #define SRCDIR	util
@@ -17,7 +17,7 @@
 	op-bw orle-pix \
 	pix-alias pix-bw pix-bw3 pix-orle \
 	pix-ps pix-rle bw-rle pix-spm pix-sun \
-	pix-ppm \
+	pix-ppm pcd-pix \
 	pix3filter pixbackgnd pixbgstrip pixbustup pixcolors pixdiff \
 	pixfade pixfields pixfieldsep pixfilter pixhalve pixhist \
 	pixhist3d-pl pixhist3d pixinterp2x pixmatte pixmerge \
