@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.29 1991-07-16 14:16:26 mmark Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.30 1991-07-22 19:54:40 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -314,7 +314,7 @@ set -S2 "/bin/sh"
 /*	set CC_OPTS= -Zf only if Weitek FP chip installed */
 #	define	CC_OPTS	-Zf
 #	define	FC_OPTS	CC_OPTS
-#	define	LD_OPTS	CC_OPTS
+#	define	LD_OPTS	-s CC_OPTS
 #	define	FC	/bin/f77
 #	define	RANLIB	ranlib
 #	define	MGED_OBJS	dm-ir
