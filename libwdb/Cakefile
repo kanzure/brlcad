@@ -1,13 +1,16 @@
 /*
  *			libwdb/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libwdb/Cakefile,v 10.1 1991-10-12 06:36:53 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/libwdb/Cakefile,v 10.2 1994-09-22 02:51:51 mike Exp $
  */
 #define PRODUCTS	libwdb.ARCH_SUF
 #define SRCDIR	libwdb
 #define FILES	wdb reg spl ars arbn units pipe export nmg poly id
 #define	SRCSUFF	.c
 #define MANSECTION	3
+
+#define VERSION_VARIABLE	libwdb_version
+#define LIBRARY_TITLE		"BRL-CAD Library for Writing Databases"
 
 #include "../Cakefile.defs"
 
