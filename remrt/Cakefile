@@ -1,7 +1,7 @@
 /*
  *			remrt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 11.14 1997-07-01 19:51:35 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 11.15 1997-07-01 23:40:54 mike Exp $
  */
 
 #define CONFIGDEFS	RFBD_CONFIG
@@ -61,7 +61,7 @@
 
 /* LIBRT is needed to get htond, parser, etc */
 remrt:	remrt.o ihost.o OBJS
-	sh ../sh/newvers.sh version "Network-Distributed RT (REMRT)"
+	newvers.sh version "Network-Distributed RT (REMRT)"
 	CC CFLAGS -c vers.c
 	CC LDFLAGS -o remrt remrt.o vers.o OBJS REMRT_PIECES
 
