@@ -537,7 +537,7 @@ else
 fi
 
 
-# RCS: @(#) $Id: configure,v 1.7 1999-11-02 19:48:39 bparker Exp $
+# RCS: @(#) $Id: configure,v 1.8 1999-12-01 13:27:09 jra Exp $
 
 TK_VERSION=8.2
 TK_MAJOR_VERSION=8
@@ -1641,7 +1641,7 @@ fi
 	    LD_SEARCH_FLAGS='-L${LIB_RUNTIME_DIR}'
 	    SHARED_LIB_SUFFIX='${VERSION}\$\{DBGX\}.a'
 	    ;;
-	IRIX-5.*|IRIX-6.*|IRIX64-6.5*)
+	IRIX-5.*|IRIX-6.*)
 	    SHLIB_CFLAGS=""
 	    SHLIB_LD="ld -n32 -shared -rdata_shared"
 	    SHLIB_LD_LIBS='${LIBS}'
