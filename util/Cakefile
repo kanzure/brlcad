@@ -1,10 +1,9 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.41 2000-12-15 05:59:10 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.42 2001-01-05 20:17:34 bparker Exp $
  */
 
-#define STATIC_PRODUCTS morphedit.tcl
 #define SRCDIR	util
 #define PRODUCTS	\
 	alias-pix ap-pix asc-pl azel bary buffer dbcp \
@@ -422,5 +421,9 @@ terrain:	terrain.o LIBBN_DEP LIBBU_DEP LIBTCL_DEP
 dsp_add:	dsp_add.o LIBBN_DEP LIBBU_DEP LIBTCL_DEP
 	CC LDFLAGS -o dsp_add dsp_add.o LIBBN LIBBU LIBTCL LIBTCL_LIBES LIBES
 
+morphedit.tcl:	../SRCDIR/morphedit.tcl
+	#ifdef NFS
+	cp ../SRCDIR/morphedit.tcl morphedit.tcl
+	#endif
 
 #include "../Cakefile.rules"
