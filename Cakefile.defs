@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.42 1991-09-27 21:59:16 phil Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.43 1991-09-30 00:56:03 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -596,12 +596,13 @@ set -S2 "/bin/sh"
 #	undef	sun
 #	undef	sun4
 #	define	MTYPE	sun4
-#	define	BSD	42
+#	define	BSD	43
 #	define	HAS_TCP	1
 #	define	OPTIMIZER	-O2
 #	define	LIBMALLOC	/* use vendor library */
+#	define	LIBRT_TIMER	timer42
 #	if 1
-/*		Sun with X11 (aka "openwin") */
+/*		Sun with X11 (aka "openwin").  Default for SunOS 4.1.1 */
 #		define	LIBFB_OBJS	if_remote if_ab if_sun if_X
 #		define	LIBFB_CONFIG	-DIF_REMOTE -DIF_AB -DIF_SUN \
 			-I/usr/openwin/include -DIF_X
