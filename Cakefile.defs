@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.17 1994-08-01 23:44:00 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.18 1994-08-09 15:02:47 gdurf Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -578,7 +578,7 @@ set -S2 "/bin/sh"
 #		define	SHARED	_s
 #	endif
 #	define	GFLAG		-KPIC
-# if 0
+# if 1
 #	define	ARCH_SUF	so
 #	define	LIBVERS	[[../sharedlibvers.sh]]
 #	define	BUILD_LIBRARY	ld -shared -o
@@ -957,12 +957,16 @@ set -S2 "/bin/sh"
 #	define	MTYPE	c1
 #	define	BSD	43
 #	define	HAS_TCP	1
-#	define	LIBFB_CONFIG	-DIF_REMOTE -DIF_AB
-#	define	LIBFB_OBJS	if_remote if_ab
-#	define	LIBFB_LIBES	LIBPKG
+#	define	LIBFB_CONFIG	-DIF_REMOTE -DIF_AB -DIF_X -I/usr/X11/include
+#	define	LIBFB_OBJS	if_remote if_ab if_X
+#	define	LIBFB_LIBES	LIBPKG -lX11
 #	define	LIBRT_TIMER	timer42
+#	define 	MGED_OBJS	dm-X
+#	define	MGED_CONFIG	-DDM_X
+#	define	MGED_LIBES	-lX11
 #	define	FC	/usr/convex/fc
 /*	libplot3/htond.c depends on running in native mode (CC_OPTS= -fn) */
+#	define	CC_OPTS -D__STDC__=1
 #	if 0
 /*		-O0 -O1 are scalar, -O1 for vectors, -O2 for parallel */
 #		define	OPTIMIZER	-O2
