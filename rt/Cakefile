@@ -1,7 +1,7 @@
 /*
  *			rt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 10.10 1994-10-31 22:49:05 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 10.11 1994-11-08 04:15:42 mike Exp $
  */
 #define CONFIGDEFS	RT_CONFIG
 
@@ -138,6 +138,6 @@ rtregis:	rtregis.o read-rtlog.o LIBRT_DEP
 	CC LDFLAGS rtregis.o read-rtlog.o LIBRT LIBRT_LIBES LIBES -o rtregis
 
 rtscale:	rtscale.o read-rtlog.o LIBRT_DEP
-	CC LDFLAGS rtscale.o read-rtlog.o LIBRT LIBRT_LIBES LIBWDB LIBPLOT LIBES -o rtscale
+	CC LDFLAGS rtscale.o read-rtlog.o LIBRT LIBRT_LIBES LIBWDB LIBES -o rtscale
 
 #include "../Cakefile.rules"
