@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.4 1991-12-20 20:24:50 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.5 1991-12-20 23:20:38 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -678,7 +678,6 @@ set -S2 "/bin/sh"
 #			define	MGED_OBJS	dm-X
 #			define	MGED_CONFIG	-DDM_X -I/usr/openwin/include
 #			define	MGED_LIBES	-L/usr/openwin/lib -lX11
-#			endif
 #		endif
 #	endif
 #	if 0
