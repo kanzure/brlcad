@@ -1,7 +1,7 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.33 1999-02-16 14:22:58 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.34 1999-04-15 13:27:54 jra Exp $
  */
 
 #define STATIC_PRODUCTS morphedit.tcl
@@ -31,7 +31,7 @@
 	plcolor pldebug plgetframe plline2 plrot plstat \
 	query rle-pix sgi-pix sun-pix xyz-pl msrandom pixblend pixmorph \
 	pixborder mst texturescale pixclump pixcount imgdims remapid \
-	wavelet
+	wavelet pixsubst
 
 /* SGI specific goodies: pix-ci */
 /* X11 specific program:  pl-X */
@@ -44,6 +44,9 @@
 #include "../Cakefile.prog"
 
 /* Explicit composition of each product */
+
+pixsubst: pixsubst.o
+	CC LDFLAGS -o pixsubst pixsubst.o
 
 wavelet: wavelet.o LIBFB_DEP LIBBU_DEP
 	CC LDFLAGS -o wavelet wavelet.o LIBFB LIBFB_LIBES LIBBN LIBBU LIBBU_LIBES LIBES
