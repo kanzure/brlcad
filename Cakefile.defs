@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.53 1996-08-31 06:50:03 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.54 1996-09-06 19:17:32 bparker Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -1518,6 +1518,9 @@ set -S2 "/bin/sh"
 #	define	LIBBU_DIR	../libbu
 #	define	LIBBU		-L''LIBBU_DIR -lbu
 #	define	LIBBU_DEP	[[LIBVERS ../libbu/libbu.ARCH_SUF]]
+#	define	LIBBN_DIR	../libbn
+#	define	LIBBN		-L''LIBBN_DIR -lbn
+#	define	LIBBN_DEP	[[LIBVERS ../libbn/libbn.ARCH_SUF]]
 #	define	LIBPLOT_DIR	../libplot3
 #	define	LIBPLOT		-L''LIBPLOT_DIR -lplot3
 #	define	LIBPLOT_DEP	[[LIBVERS ../libplot3/libplot3.ARCH_SUF]]
@@ -1585,6 +1588,9 @@ set -S2 "/bin/sh"
 #	define	LIBBU_DIR	../.libbu.MTYPE
 #	define	LIBBU		-L''LIBBU_DIR -lbu
 #	define	LIBBU_DEP	[[LIBVERS ../.libbu.MTYPE/libbu.ARCH_SUF]]
+#	define	LIBBN_DIR	../.libbn.MTYPE
+#	define	LIBBN		-L''LIBBN_DIR -lbn
+#	define	LIBBN_DEP	[[LIBVERS ../.libbn.MTYPE/libbn.ARCH_SUF]]
 #	define	LIBPLOT_DIR	../.libplot3.MTYPE
 #	define	LIBPLOT		-L''LIBPLOT_DIR -lplot3
 #	define	LIBPLOT_DEP	[[LIBVERS ../.libplot3.MTYPE/libplot3.ARCH_SUF]]
