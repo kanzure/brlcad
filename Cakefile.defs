@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.89 1994-12-27 23:50:23 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.90 1994-12-27 23:51:24 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -772,6 +772,18 @@ set -S2 "/bin/sh"
  *	Many of these should work with little or no effort.	*
  *								*
  ****************************************************************/
+
+#if defined(__CAKE__alpha)
+/*	DEC Alpha AXP running OSF/1 Version 3 */
+#	undef	alpha
+#	define	MTYPE	alpha
+#	define	BSD	43
+#	define	HAS_TCP	1
+#	define	LIBFB_OBJS	if_remote
+#	define	LIBFB_CONFIG	-DIF_REMOTE
+#	define	LIBFB_LIBES	LIBPKG
+#	define	LIBRT_TIMER	timer42
+#endif
 
 #if defined(__CAKE__aux)
 /*	Apple MAC II running A/UX 1.0 */
