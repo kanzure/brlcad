@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.97 1994-12-30 11:17:30 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.98 1994-12-30 12:43:59 gdurf Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -880,9 +880,9 @@ set -S2 "/bin/sh"
 #if defined(__CAKE__nb) || defined(__CAKE__nb86)
 /* system running NetBSD 1.0 from Chris Demetriou <cgd@sun-lamp.cs.berkeley.edu> */
 #	if defined(i386)
-#		define	MTYPE 		nb86
+#		define	MTYPE	nb86
 #	else
-#		define	MTYPE		nb
+#		define	MTYPE	nb
 #	endif
 #	define	HAS_TCP		1
 #	define	HAS_SYMLINKS 	1
@@ -900,8 +900,13 @@ set -S2 "/bin/sh"
 
 	/* i386 users have XFree86, usually */
 #	if defined(i386)
+#if 0
 #		define	XINCDIR	/usr/X386/include
 #		define	XLIBDIR	/usr/X386/lib
+#else
+#		define	XINCDIR	/usr/X11R6/include
+#		define	XLIBDIR	/usr/X11R6/lib
+#endif
 #	endif
 
 #	define	LIBFB_CONFIG	-DIF_REMOTE -I''XINCDIR -DIF_X
