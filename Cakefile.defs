@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.33 1995-08-22 22:28:50 cnuzman Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.34 1995-08-24 17:28:14 cnuzman Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -281,12 +281,12 @@ set -S2 "/bin/sh"
 				-lxmalloc -ll
 #else
 /* 	Carl's test version */
-#	define	MGED_OBJS	dm-4d dm-X dm-ogl
-#	define	MGED_CONFIG	GFLAG -DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_4D -DDM_X -I''XINCDIR -DDM_OGL
+#	define	MGED_OBJS	dm-4d dm-X dm-gl
+#	define	MGED_CONFIG	GFLAG -DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_4D -DDM_X -I''XINCDIR -DDM_GL
 #	define	MGED_LIBES	-L''XLIBDIR -lX11''SHARED -lgl''SHARED -lGL
 #       define  XMGED_ALLOCA    alloca
-#	define	XMGED_OBJS	dm-4d dm-X Xmgl dm-ogl
-#	define	XMGED_CONFIG	-Wf,-XNl7000 GFLAG -DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_4D -DDM_X -DDMX_SIGNALS -DXMGED -I/usr/include/X11 -DDM_OGL
+#	define	XMGED_OBJS	dm-4d dm-X Xmgl dm-gl
+#	define	XMGED_CONFIG	-Wf,-XNl7000 GFLAG -DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_4D -DDM_X -DDMX_SIGNALS -DXMGED -I/usr/include/X11 -DDM_GL
 #	define	XMGED_LIBES	-L''XLIBDIR -lXirisw -lgl_s -lGL -lXm \
 				-lXt_s -lXi -lXext -lX11_s -lsun -lPW \
 				-lxmalloc -ll
