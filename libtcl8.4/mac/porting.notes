@@ -1,7 +1,7 @@
 Porting Notes
 -------------
 
-RCS: @(#) $Id: porting.notes,v 1.1 2003-03-13 19:18:17 jra Exp $
+RCS: @(#) $Id: porting.notes,v 1.2 2003-11-07 14:54:36 morrison Exp $
 
 Currently, the Macintosh version Tcl only compilies with the
 CodeWarrior C compilier from MetroWerks.  It should be straight
