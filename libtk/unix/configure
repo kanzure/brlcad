@@ -537,7 +537,7 @@ else
 fi
 
 
-# RCS: @(#) $Id: configure,v 1.5 1999-10-20 14:30:57 jra Exp $
+# RCS: @(#) $Id: configure,v 1.6 1999-11-01 20:57:53 jra Exp $
 
 TK_VERSION=8.2
 TK_MAJOR_VERSION=8
@@ -1256,7 +1256,7 @@ fi
 #------------------------------------------------------------------------
 
 if test "${GCC}" = "yes" ; then
-    CFLAGS_WARNING="-Wall -Wconversion -Wno-implicit-int"
+    CFLAGS_WARNING="-Wall -Wno-implicit-int"
 else
     CFLAGS_WARNING=""
 fi
