@@ -1,5 +1,7 @@
 /*
- *			rfbd/Cakefile
+ *			fbserv/Cakefile
+ *
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/fbserv/Cakefile,v 9.3 1991-01-03 23:46:38 mike Exp $
  */
 
 #define CONFIGDEFS	RFBD_CONFIG
@@ -17,6 +19,6 @@
 /* Explicit composition of each product */
 
 fbserv:	OBJ LIBFB
-	CC LDFLAGS -o fbserv OBJ LIB_PRE''LIBFB RFBD_LIBES LIBES
+	CC LDFLAGS -o fbserv OBJ LIB_PRE''LIBFB LIBFB_LIBES RFBD_LIBES LIBES
 
 #include "../Cakefile.rules"
