@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.85 1994-12-21 23:56:23 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.86 1994-12-22 00:07:27 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -709,8 +709,8 @@ set -S2 "/bin/sh"
 #	define	MGED_CONFIG	-DDM_X -I''XINCDIR
 #	define	MGED_LIBES	-L''XLIBDIR -lX11
 #	define	FC	/usr/convex/fc
-/*	libplot3/htond.c depends on running in native mode (CC_OPTS= -fn) */
-#	define	CC_OPTS -D__STDC__=1 -DHAVE_UNISTD_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1
+/*	Must run in IEEE mode, not native mode */
+#	define	CC_OPTS -D__STDC__=1
 #	if 0
 /*		-O0 -O1 are scalar, -O1 for vectors, -O2 for parallel */
 #		define	OPTIMIZER	-O2
