@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.60 1994-11-04 23:59:04 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.61 1994-11-08 04:04:32 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -600,8 +600,7 @@ set -S2 "/bin/sh"
 #		define	LIBVERS ../sharedlibvers.sh
 #		define	BUILD_LIBRARY	ld -shared -o
 #		define	RANLIB	true
-/*		Note that /usr/lib64 MUST go first on -rpath, so that -lmalloc is the system one */
-#		define	STANDARD_LIBES	-lm -lmalloc -lc -rpath /usr/lib64:LIBDIR
+#		define	STANDARD_LIBES	-lm -lc -rpath /usr/lib64:LIBDIR
 /*		When debugging libraries, -m and -v are helpful LD_OPTS */
 /*		-Wl,-S supresses non-fatal LD errors.  LD has gotten chatty. */
 #		define	LD_OPTS		GFLAG
