@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.272 2004-03-09 20:50:53 morrison Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.273 2004-03-17 15:34:33 jra Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -862,6 +862,8 @@ set -S2 "/bin/sh"
 #	define	XINCDIR		/usr/openwin/include
 #	define	XLIBDIR		/usr/openwin/lib
 
+#	define	JNI_INC		-I /usr/java/include -I /usr/java/include/solaris
+
 #	if defined( __GNUC__ )
 #		define	CC		gcc
 #		if BUILD_OPTIMIZED	
@@ -1047,6 +1049,7 @@ set -S2 "/bin/sh"
 #	define	CC	gcc
 #	define	CC_DEFS -pipe -fPIC GCC_WARNINGS
 /*			-std=iso9899:199409 */
+#	define	JNI_INC	-I/usr/java/j2sdk1.4.2_02/include "-I/usr/java/j2sdk1.4.2_02/include/linux"
 #	if BUILD_OPTIMIZED	
 #		define	OPTIMIZER	-O3 -fomit-frame-pointer -fno-strict-aliasing
 #	else
