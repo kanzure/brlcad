@@ -1,7 +1,7 @@
 /*
  *			proc-db/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 9.6 1991-07-02 23:26:44 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/proc-db/Cakefile,v 9.7 1991-07-23 02:14:15 mike Exp $
  */
 
 #define SRCDIR	proc-db
@@ -63,7 +63,7 @@ wall:	wall.o
  */
 %.o&:	rt,,%,o			if exist ../rt/%.c
 
-%9,,%,o&:	../%9/%.c [[cakeinclude.sh ../%9/%.c INCDIR ../%9]] \
+%9,,%,o&:	../%9/%.c [[cakeinclude ../%9/%.c INCDIR ../%9]] \
 					if exist ../%9/%.c
 	CC CFLAGS -c ../%9/%.c
 
