@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.243 2002-01-24 21:43:28 rbowers Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.244 2002-02-27 18:27:17 jra Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -895,8 +895,8 @@ set -S2 "/bin/sh"
 #		define	LIBDM_OBJS	color query dm-X
 #		define	LIBDM_CONFIG	-DDM_X -I''XINCDIR
 #		define	LIBDM_LIBES	LIBTK LIBTCL LIBTK_LIBES LIBTCL_LIBES
-#		define	MGED_OBJS	doevent update dm-X dm-xgl dm-generic
-#		define	MGED_CONFIG	-DDM_X -DDM_XGL -I''XINCDIR -I''XGLHOME/include
+#		define	MGED_OBJS	doevent update dm-X dm-generic
+#		define	MGED_CONFIG	-DDM_X -I''XINCDIR
 /*		-lxgl does not appear available after 5.5 any more -- name changed to -lxil */
 #if 1
 #		define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -lnsl -lsocket
