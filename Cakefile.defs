@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.38 1994-09-28 19:29:55 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.39 1994-09-28 21:51:57 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -521,7 +521,8 @@ set -S2 "/bin/sh"
 #	define	MTYPE	6d
 #	if 0	/* PRODUCTION=1 */
 /*		This version for production: optimization & shared libraries */
-#		define	OPTIMIZER	-O2
+/*		SGI's netinet/tcp.h flunks ANSI conformance.  Silence the warnings */
+#		define	OPTIMIZER	-O2 -woff 658
 /*		Use shared libraries */
 #		define	SHARED	_s
 #	else
