@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.235 2001-10-23 16:50:28 morrison Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.236 2001-10-24 19:47:00 morrison Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -312,14 +312,14 @@ set -S2 "/bin/sh"
 /*		-fullwarn is pretty verbose */
 #		define	OPTIMIZER	-g -use_readonly_const
 #	endif
-#	define	GFLAG	-o32 -KPIC -G 0
+#	define	GFLAG	-n32 -KPIC -G 0
 #	define  XINCDIR /usr/include/X11
 #	define	XLIBDIR /usr/lib
 #	if BUILD_SHARED	/* PRODUCTION=1 */
 /*		Shared library version support */
 #		define	ARCH_SUF	so
 #		define	LIBVERS ../sh/sharedlibvers.sh
-#		define	LDSHARED	ld -o32 -shared
+#		define	LDSHARED	ld -n32 -shared
 #		define	BUILD_LIBRARY	LDSHARED -o
 #		define	RANLIB	true
 #		define	STANDARD_LIBES	-lm -rpath LIBDIR:/usr/lib  /* -lmalloc -lc */
@@ -330,7 +330,7 @@ set -S2 "/bin/sh"
 #	else
 /*		Static linked executables */
 #		define	RANLIB	ranlib5.sh
-#		define	STANDARD_LIBES	-o32 -lm -lmalloc /* -lc */
+#		define	STANDARD_LIBES	-n32 -lm -lmalloc /* -lc */
 #	endif
 #	define	LD_OPTS		GFLAG 
 /* -ansiposix	ANSI+POSIX mode is used over ANSI, to get fdopen(), etc, defined. */
