@@ -1,7 +1,7 @@
 /*
  *			remrt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 9.5 1991-01-03 23:57:27 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 9.6 1991-06-12 22:02:02 cjohnson Exp $
  */
 
 #define CONFIGDEFS	RFBD_CONFIG
@@ -17,7 +17,7 @@
 #include "../Cakefile.defs"
 #include "../Cakefile.prog"
 
-#ifdef NFS
+#if NFS
 #	define	RTDIR	../.rt.MTYPE
 #else
 #	define	RTDIR	../rt
