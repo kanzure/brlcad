@@ -15,7 +15,7 @@
  *  Distribution Status -
  *	Public Domain, Distribution Unlimitied.
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.lib,v 11.1 1995-01-04 09:43:30 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.lib,v 11.2 1996-11-12 15:58:01 jra Exp $
  */
 
 #ifndef PRODUCTS
@@ -44,6 +44,10 @@
 
 #ifndef EXTRA_OBJ_NO_DEPENDENCY
 #	define EXTRA_OBJ_NO_DEPENDENCY	/**/
+#endif
+
+#ifndef LIB_FLAGS
+#	define LIB_FLAGS	/**/
 #endif
 
 #if !defined(BUILD_LIBRARY)
@@ -79,7 +83,7 @@ PRODUCTS&::	EXTRA_OBJ OBJ
 %.o&:	SRCDIR,,%,o			if exist ../SRCDIR/%.c
 
 %9,,%,o&:	../%9/%.c HDR_DEP9	if exist ../%9/%.c
-	CC CFLAGS -c ../%9/%.c
+	CC CFLAGS LIB_FLAGS -c ../%9/%.c
 
 /* Override the modes for the library */
 #undef	BINDIR
