@@ -46,8 +46,8 @@ GOVERNMENT but no development charge may be made as part of its use.
 
 4. If RECIPIENT makes MODIFICATIONS to BRL-CAD, then RECIPIENT agrees to
 provide a copy of all such MODIFICATIONS to ARL in source code form.
-RECIPIENT agrees that such MODIFICATIONS can be used by ARL and shared
-with the entire BRL-CAD user community.
+RECIPIENT agrees that such MODIFICATIONS can be used by ARL and
+the entire BRL-CAD user community.
 
 5.  RECIPIENT will own full rights to any EXTENSIONS to BRL-CAD they create.
 
@@ -176,7 +176,7 @@ ____________________________________________________________
 
 7. Are you interested in participating in the BRL-CAD user group?  ________
 
-			( $Revision: 1.10 $ )
+			( $Revision: 1.11 $ )
                                                                  Page 4 of 4
 
 8. Please indicate the anticipated uses of BRL-CAD at this site (check all
