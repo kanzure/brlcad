@@ -1,14 +1,14 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.25 1998-06-26 15:10:45 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.26 1998-06-29 18:31:33 jra Exp $
  */
 
 #define STATIC_PRODUCTS morphedit.tcl
 #define SRCDIR	util
 #define PRODUCTS	\
 	alias-pix ap-pix asc-pl azel bary buffer dbcp \
-	bw-a bw-imp bw-pix bw-ps bw3-pix bw-png png-bw \
+	bw-a bw-imp bw-pix bw-ps bw3-pix bw-png png-bw png_info \
 	bwcrop bwdiff bwfilter bwhist bwhisteq \
 	bwmod bwrect bwrot bwscale bwshrink \
 	bwstat bwthresh \
@@ -43,6 +43,9 @@
 #include "../Cakefile.prog"
 
 /* Explicit composition of each product */
+
+png_info:	png_info.o LIBBU_DEP LIBPNG_DEP LIBZ_DEP
+	cc LDFLAGS -o png_info png_info.o LIBPNG LIBZ LIBBN LIBBU LIBBU_LIBES LIBES
 
 pix-png:	pix-png.o LIBBU_DEP LIBPNG_DEP LIBZ_DEP
 	cc LDFLAGS -o pix-png pix-png.o LIBPNG LIBZ LIBBN LIBBU LIBBU_LIBES LIBES
