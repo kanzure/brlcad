@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.2 1991-10-12 07:21:31 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.3 1991-11-07 12:48:08 mmark Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -1186,7 +1186,7 @@ set -S2 "/bin/sh"
 #define	TYPESET_MAN0	tbl
 #define	TYPESET_MAN1	/usr/lib/tmac/tmac.an
 #define	TYPESET_MAN2	/usr/5lib/troff -Ti300 | /usr/5bin/dimp -t | \
-			    qpr -q im231
+			    qpr -q imt1
 #ifdef never
 #define	TYPESET_MAN2	| /usr/5lib/troff -Ti10 | /usr/5bin/di10 -t | \
 			    qpr -q im328-raw
