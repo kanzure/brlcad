@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.232 2001-10-15 19:58:03 morrison Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.233 2001-10-15 20:03:21 morrison Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -127,14 +127,14 @@ set -S2 "/bin/sh"
 #	define BUILD_XWINDOWS	1
 #	define BUILD_OPENGL	0
 # 	define BUILD_PRODUCTION	0
-#	define BUILD_SMP	0
+/* #	define BUILD_SMP	0 */ /* does nothing right now */
 #else
 #	define BUILD_OPTIMIZED	0
-#	define BUILD_SHARED	0
-#	define BUILD_XWINDOWS	0
+#	define BUILD_SHARED	1
+#	define BUILD_XWINDOWS	1
 #	define BUILD_OPENGL	0
 #	define BUILD_PRODUCTION	0
-#	define BUILD_SMP	0
+/* #	define BUILD_SMP	0 */ /* does nothing right now */
 #endif
 
 /* This is the version of Tcl/Tk distributed with BRL-CAD */
