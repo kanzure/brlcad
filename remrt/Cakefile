@@ -1,7 +1,7 @@
 /*
  *			remrt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 10.8 1994-10-31 23:25:38 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 10.9 1994-12-20 16:03:42 jra Exp $
  */
 
 #define CONFIGDEFS	RFBD_CONFIG
@@ -23,16 +23,9 @@
 #	define	RTDIR	../rt
 #endif
 
-#ifdef CRAY1
-#define REMRT_PIECES	\
-		RTDIR/opt.o \
-		-lbsd \
-		LIBFB LIBFB_LIBES LIBRT LIBRT_LIBES LIBES
-#else
 #define REMRT_PIECES	\
 		RTDIR/opt.o \
 		LIBFB LIBFB_LIBES LIBRT LIBRT_LIBES LIBES
-#endif
 
 #define	RTSRV_PIECES	\
 		RTDIR/opt.o \
