@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.266 2003-09-27 00:49:38 morrison Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.267 2003-11-18 14:19:33 morrison Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -1204,9 +1204,11 @@ set -S2 "/bin/sh"
 #		define	OPTIMIZER	-g -fno-common
 #	endif
 #	if BUILD_SHARED	
+#		error "ERROR: Building with shared libraries is not supported via cake"
+#		error "       (use ProjectBuilder)"
 /*		Shared library version support.  */
 /*		PowerPC code is position-independant by default (and by design) (i.e. no nee d for -fPIC) */
-#		define	CC_DEFS -pipe -Wall -bsd
+#		define	CC_DEFS -pipe -Wall 
 /* #		define	ARCH_SUF	so */
 #		define	ARCH_SUF	dylib
 /*#		define	LIBVERS ../sh/sharedlibvers.sh*/
