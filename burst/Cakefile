@@ -7,7 +7,7 @@
  *			Maryland 21005-5066
  *			(301)278-6651 or AV-298-6651
  *
- *	$Header: /usr/Backup/upgrade/brlcad/brlcad/burst/Cakefile,v 1.6 1990-08-29 10:16:17 moss Exp $ (BRL)
+ *	$Header: /usr/Backup/upgrade/brlcad/brlcad/burst/Cakefile,v 1.7 1991-01-15 13:42:40 moss Exp $ (BRL)
  *
  * FONTDIR is pathname to font file (times.r.6) which is included with sources
  * but on real BSD systems is found in /usr/lib/vfont.
@@ -19,25 +19,16 @@
 #define	SRCSUFF	.c
 #define MANSECTION	1
 #define FILES	burst error fb glob grid gridrotate idents\
-		paint plot prnt trie ui
-#define MYLIBES	Hm/libHm.a Sc/libSc.a Tc/libTc.a
+		paint plot prnt trie ui\
+		Hm HmGetc HmGlob Sc Tc
 #include "../Cakefile.defs"
 #include "../Cakefile.prog"
 
 /* Explicit composition of each product */
 PRODUCTS:	OBJ
-	CC LDFLAGS -o burst OBJ LIB_PRE''LIBRT RT_LIBES LIB_PRE''LIBFB LIBTERMLIB LIBES MYLIBES -ltermlib -lm
+	CC LDFLAGS -o burst OBJ LIB_PRE''LIBRT RT_LIBES LIB_PRE''LIBFB LIBTERMLIB LIBES -ltermlib -lm
 
-all&: MYLIBES PRODUCTS
-
-Hm/libHm.a:
-	cd Hm; make
-
-Sc/libSc.a:
-	cd Sc; make
-
-Tc/libTc.a:
-	cd Tc; make
+all&: PRODUCTS
 
 test&:	all tfiles/ktank.g
 	./burst -b < tfiles/ktank.in
