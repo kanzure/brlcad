@@ -1,7 +1,7 @@
 /*
  *			rt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 11.22 1997-07-16 14:14:57 gdurf Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 11.23 1997-07-16 14:21:03 gdurf Exp $
  */
 #define CONFIGDEFS	RT_CONFIG
 
@@ -24,7 +24,7 @@
 	material refract sh_stack \
 	sh_plastic sh_cook wray sh_spm sh_light \
 	turb sh_marble sh_wood sh_stxt sh_points sh_toyota \
-	sh_camo sh_scloud sh_air sh_fire sh_cs sh_rtrans sh_brdf \ 
+	sh_camo sh_scloud sh_air sh_fire sh_cs sh_rtrans sh_brdf \
 	sh_gauss sh_paint sh_noise sh_prj
 
 
