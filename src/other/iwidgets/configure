@@ -1189,7 +1189,7 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
 
 
-# RCS: $Id: configure,v 1.2 2004-07-13 17:49:19 morrison Exp $
+# RCS: $Id: configure,v 14.1 2004-11-16 19:42:18 morrison Exp $
 
 ITCL_VERSION=3.2
 

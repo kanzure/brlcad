@@ -11,7 +11,7 @@ exec wish "$0" "$@"
 # Button-1 press/drag:		moves square to mouse
 # "a":				toggle size animation on/off
 #
-# RCS: @(#) $Id: square,v 1.1 2004-05-20 14:53:08 morrison Exp $
+# RCS: @(#) $Id: square,v 14.1 2004-11-16 19:42:26 morrison Exp $
 
 square .s
 pack .s -expand yes -fill both

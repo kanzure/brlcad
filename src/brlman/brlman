@@ -8,7 +8,7 @@
 #  Michael John Muuss, BRL, 23-June-1991.
 #  Public Domain, Distribution Unlimited
 #
-#  @(#) $Header: /usr/Backup/upgrade/brlcad/brlcad/src/brlman/brlman,v 1.1 2004-05-20 15:18:41 morrison Exp $ (BRL)
+#  @(#) $Header: /usr/Backup/upgrade/brlcad/brlcad/src/brlman/brlman,v 14.1 2004-11-16 19:42:12 morrison Exp $ (BRL)
 
 if test $# -lt 1
 then

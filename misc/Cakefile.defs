@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/misc/Cakefile.defs,v 1.1 2004-05-20 21:40:14 morrison Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/misc/Cakefile.defs,v 14.1 2004-11-16 19:42:10 morrison Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,

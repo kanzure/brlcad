@@ -8,7 +8,7 @@ exec wish "$0" ${1+"$@"}
 # feel of a rolodex program, although it's lifeless and doesn't
 # actually do the rolodex application.
 #
-# RCS: @(#) $Id: rolodex,v 1.1 2004-05-20 14:53:07 morrison Exp $
+# RCS: @(#) $Id: rolodex,v 14.1 2004-11-16 19:42:26 morrison Exp $
 
 foreach i [winfo child .] {
     catch {destroy $i}

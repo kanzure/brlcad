@@ -12,7 +12,7 @@
  * See the file "license.terms" for information on usage and redistribution
  * of this file, and for a DISCLAIMER OF ALL WARRANTIES.
  *
- * RCS: @(#) $Id: MW_TkStaticHeader.pch,v 1.1 2004-05-20 14:53:17 morrison Exp $
+ * RCS: @(#) $Id: MW_TkStaticHeader.pch,v 14.1 2004-11-16 19:42:27 morrison Exp $
  */
 
 /*
