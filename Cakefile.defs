@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 8.6 1989-02-27 01:41:00 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 8.7 1989-02-27 01:43:52 phil Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -410,6 +410,26 @@ set -S2 "/bin/sh"
 		rm -fr /usr/tmp/libfb )
 #	define	LIBRT_TIMER	timer42
 #	define	MGED_OBJS	dm-sun
+#	define	MGED_CONFIG	-DDM_SUNPW
+#	define	MGED_LIBES	-lsuntool -lsunwindow -lpixrect
+#endif
+
+#	undef	sun3
+#if defined(apollo)
+#	undef	apollo
+#	define	MTYPE	apollo
+#	define	UNIXTYPE	SYSV
+#	define	HAS_TCP	1
+#	define  CC_OPTS
+#	define	LIBMALLOC	/* must use libc.a, for _malloc_at_addr() */
+#	define	LD_OPTS	CC_OPTS
+#	define	LIBMALLOC	/* may be able to use local libmalloc */
+#	define	LIBRT_TIMER	timerunix
+#	define	LIBFB_OBJS
+#	define	LIBFB_CONFIG
+#	define	LIBFB_SETUP
+#	define	MGED_OBJS
+#	define	RANLIB	/usr/ucb/ranlib
 #	define	MGED_CONFIG
 #	define	MGED_LIBES
 #endif
