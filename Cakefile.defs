@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.88 1997-06-23 13:59:10 gdurf Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.89 1997-06-30 13:33:08 gdurf Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -663,7 +663,8 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	TCL_DEFS	OPTIMIZER -DTCL_LIBRARY='"'TCLLIBDIR'"' -DTCL_PACKAGE_PATH='"'TCLLIBDIR'"' -DHAVE_UNISTD_H=1 -DHAVE_SYS_TIME_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_TZNAME=1 -DHAVE_TIMEZONE_VAR=1 -DSTDC_HEADERS=1 -DHAVE_SYS_IOCTL_H=1 
 #	define	TK_DEFS		OPTIMIZER -DTK_LIBRARY='"'TKLIBDIR'"' -DTK_PACKAGE_PATH='"'TKLIBDIR'"' -DHAVE_UNISTD_H=1 -DHAVE_LIMITS_H=1 -DSTDC_HEADERS=1
 #	define	LIBDM_SAMPLER_LIBES MGED_LIBES
-#	define	LIBBU_LIBES	LIBTCL -ldl
+#	define	LIBBU_LIBES	LIBTCL LIBTCL_LIBES
+#	define	LIBTCL_LIBES	-ldl
 #endif
 
 #if defined(__CAKE__bsdi)
