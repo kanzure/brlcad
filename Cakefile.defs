@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.238 2001-10-29 14:54:01 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.239 2001-10-30 13:56:01 morrison Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -1021,7 +1021,7 @@ set -S2 "/bin/sh"
 #	define	CC_DEFS -pipe -fPIC -Wall -pedantic
 /*			-std=iso9899:199409 */
 #	if BUILD_OPTIMIZED	/* PRODUCTION=1 */
-#		define	OPTIMIZER	-O3 -fno-strict-aliasing
+#		define	OPTIMIZER	-O3 -fomit-frame-pointer -fno-strict-aliasing
 #	else
 #		define	OPTIMIZER	-O -g
 #		define	PROFILER	-pg  /* gprof profiling -- build staticly to include libraries */
@@ -2261,9 +2261,14 @@ set -S2 "/bin/sh"
 #define	MANPERM	444
 #define	DIRPERM	775
 
-#if	!defined(ARCH_SUF)
-/*	Suffix for archives.  "a" on most UNIX machine, "o" on XMP */
-#	define	ARCH_SUF	a
+/* Suffix for archives.  "a" on most UNIX machines for static and "so" for shared */
+/* "o" on XMP */
+#if !defined(ARCH_SUF)
+#       if BUILD_SHARED
+#	        define	ARCH_SUF	so
+#       else
+#       	define	ARCH_SUF	a
+#       endif
 #endif
 
 /*
