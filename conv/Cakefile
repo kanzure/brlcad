@@ -1,7 +1,7 @@
 /*
  *			conv/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 11.15 1998-11-06 14:41:35 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/conv/Cakefile,v 11.16 1998-11-19 18:47:05 jra Exp $
  */
 
 #define SRCDIR	conv
@@ -45,7 +45,7 @@ proe-g: proe-g.o LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBWDB_DEP LIBSYSV_DEP
 	CC LDFLAGS proe-g.o LIBWDB LIBRT LIBBN LIBBU LIBBU_LIBES LIBES LIBSYSV -o proe-g
 
 stl-g:	proe-g
-	rm stl-g
+	rm -f stl-g
 	ln -s proe-g stl-g
 
 fast4-g: fast4-g.o LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBWDB_DEP
