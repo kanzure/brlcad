@@ -1,7 +1,7 @@
 /*
  *			sample_applications/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/sample_applications/Cakefile,v 1.2 1999-05-13 21:39:45 bparker Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/sample_applications/Cakefile,v 1.3 1999-05-14 15:15:20 bparker Exp $
  */
 #include "../Cakefile.defs"
 
@@ -13,7 +13,7 @@
 #define BINPERM 444
 #define MANSECTION	1
 
-#define BUILD_MAKEFILE build_makefile.sh
+#define BUILD_MAKEFILE ./build_makefile.sh
 
 clean&:
 	@echo "" > /dev/null
