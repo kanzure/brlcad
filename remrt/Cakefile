@@ -1,7 +1,7 @@
 /*
  *			remrt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 10.7 1994-10-31 23:03:53 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 10.8 1994-10-31 23:25:38 mike Exp $
  */
 
 #define CONFIGDEFS	RFBD_CONFIG
@@ -46,7 +46,8 @@
 		RTDIR/sh_marble.o RTDIR/sh_stxt.o \
 		RTDIR/sh_points.o RTDIR/sh_toyota.o \
 		RTDIR/sh_spm.o RTDIR/sh_light.o RTDIR/do.o \
-		LIBPKG LIBRT LIBRT_LIBES LIBES
+		LIBPKG LIBPKG_LIBES \
+		LIBRT LIBRT_LIBES LIBES
 
 #define OBJS	/**/
 
