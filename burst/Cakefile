@@ -6,7 +6,7 @@
 			Aberdeen Proving Ground
 			Maryland 21005-5066
 
-	$Header: /usr/Backup/upgrade/brlcad/brlcad/burst/Cakefile,v 1.13 1996-08-31 11:31:42 mike Exp $ (BRL)
+	$Header: /usr/Backup/upgrade/brlcad/brlcad/burst/Cakefile,v 1.14 1997-03-20 21:42:06 jra Exp $ (BRL)
 
  */
 /* Remove the following line if you have BRLCAD 4.0 or later. */
@@ -32,21 +32,21 @@ all&: PRODUCTS
 
 test&:	../.burst.MTYPE/burst tfiles/ktank.g
 	../.burst.MTYPE/burst -b < tfiles/ktank.in
-	@if test $? -ne 0 \
-	then	echo "Test failed."; exit 1 \
+	@if test $? -ne 0 \\
+	then	echo "Test failed."; exit 1 \\
 	fi
 	diff tfiles/ktank.burst tfiles/ktank.burst.bak4.0
-	@if test $? -ne 0 \
-	then	echo "Test failed."; exit 1 \
+	@if test $? -ne 0 \\
+	then	echo "Test failed."; exit 1 \\
 	fi
 	diff tfiles/ktank.shotlines tfiles/ktank.shotlines.bak4.0
-	@if test $? -ne 0 \
-	then	echo "Test failed."; exit 1 \
+	@if test $? -ne 0 \\
+	then	echo "Test failed."; exit 1 \\
 	fi
 	@echo "Tested OK."
 
 untest&:
-	rm -f tfiles/ktank.burst tfiles/ktank.shotlines tfiles/ktank.plot \
+	rm -f tfiles/ktank.burst tfiles/ktank.shotlines tfiles/ktank.plot \\
 		tfiles/ktank.pix tfiles/ktank.g tfiles/ktank.log
 
 tfiles/ktank.g:
