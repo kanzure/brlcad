@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.43 1991-09-30 00:56:03 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.44 1991-09-30 01:17:51 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -1015,11 +1015,7 @@ set -S2 "/bin/sh"
 #endif
 
 #if !defined(MANDIR)
-#	ifdef BSD
-#		define	MANDIR	/usr/man/man
-#	else
-#		define	MANDIR	/usr/brlcad/man/man
-#	endif
+#	define	MANDIR	/usr/brlcad/man/man
 #endif
 
 /* Permissions for "installed" files of various types */
