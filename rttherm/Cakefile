@@ -1,7 +1,7 @@
 /*
  *			rttherm/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.36 1999-12-05 19:35:27 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.37 1999-12-06 23:40:31 mike Exp $
  */
 
 /* This shows up in CFLAGS */
@@ -15,7 +15,7 @@
 #include "../Cakefile.defs"
 #include "../Cakefile.prog"
 
-/* light.h material.h mathtab.h rad.h rdebug.h */
+/* light.h material.h rad.h rdebug.h */
 #define FILES	\
 	viewtherm ssampview
 
@@ -26,7 +26,7 @@
 #endif
 
 /*  The "top-half" (user interface) for the RT family of programs */
-#define RTUIF	RTDIR/main.o RTDIR/opt.o RTDIR/do.o RTDIR/worker.o RTDIR/mathtab.o RTDIR/material.o
+#define RTUIF	RTDIR/main.o RTDIR/opt.o RTDIR/do.o RTDIR/worker.o RTDIR/material.o
 
 /* Specially compiled versions */
 refract.o: ../rt/refract.c
