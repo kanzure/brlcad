@@ -15,7 +15,7 @@
  *  Distribution Status -
  *	Public Domain, Distribution Unlimitied.
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.lib,v 10.5 1994-08-24 21:53:28 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.lib,v 10.6 1994-08-24 22:48:20 mike Exp $
  */
 
 #ifndef PRODUCTS
@@ -40,7 +40,7 @@
 #	define EXTRA_OBJ_NO_DEPENDENCY	/**/
 #endif
 
-#if !defined(LIBVERS)
+#if !defined(BUILD_LIBRARY)
 PRODUCTS::	EXTRA_OBJ OBJ
 	rm -f PRODUCTS; EXTRA_SETUP
 	AR r PRODUCTS OBJ EXTRA_OBJ EXTRA_OBJ_NO_DEPENDENCY
