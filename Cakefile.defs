@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.87 1994-12-22 00:53:15 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 10.88 1994-12-22 01:10:11 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -284,7 +284,7 @@ set -S2 "/bin/sh"
 /*	Silicon Graphics 4D, running IRIX 6.0 (on a 64-bit machine) */
 #	undef	sgi
 #	define	MTYPE	7d
-#	if 1	/* PRODUCTION=1 */
+#	if 0	/* PRODUCTION=1 */
 /*		This version for production: optimization & shared libraries */
 /*		Warning 1174 is "variable declared but never referenced". */
 /*		Warning 1032 is "expression must have arithmetic type". */
