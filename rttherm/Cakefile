@@ -1,7 +1,7 @@
 /*
  *			rt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.28 1998-09-22 01:43:09 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.29 1998-09-22 02:28:29 mike Exp $
  */
 #define CONFIGDEFS	RT_CONFIG
 
@@ -148,10 +148,10 @@ rtscale:	rtscale.o read-rtlog.o LIBRT_DEP LIBBN_DEP LIBBU_DEP
 
 #define RTTHERM_OBJ	RTUIF viewtherm.o wray.o spectrum.o
 
-rttherm:	RTTHERM_OBJ LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBFB_DEP
+rttherm:	RTTHERM_OBJ LIBMULTISPECTRAL_DEP LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBFB_DEP
 	newvers.sh version "Thermal RT"
 	CC CFLAGS -c vers.c
-	CC LDFLAGS RTTHERM_OBJ vers.o LIBRT LIBBN LIBFB LIBFB_LIBES LIBBU LIBBU_LIBES LIBES -o rttherm
+	CC LDFLAGS RTTHERM_OBJ vers.o LIBMULTISPECTRAL LIBRT LIBBN LIBFB LIBFB_LIBES LIBBU LIBBU_LIBES LIBES -o rttherm
 
 #define RTSIL_OBJ	RTUIF viewsil.o
 
