@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.32 1991-07-23 02:36:17 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 9.33 1991-07-24 20:18:46 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -1134,3 +1134,4 @@ set -S2 "/bin/sh"
 #define	OBJ	[[SUB X X''OBJSUFF BASE_FILES]]
 #define	OBJSUFF .o
 #define	HDR_DEP	[[cakeinclude -i INCDIR -s ../SRCDIR ../SRCDIR/%.c]]
+#define	HDR_DEP9 [[cakeinclude -i INCDIR -s ../%9 ../%9/%.c]]
