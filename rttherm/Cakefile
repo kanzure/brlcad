@@ -1,7 +1,7 @@
 /*
  *			rt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.29 1998-09-22 02:28:29 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rttherm/Cakefile,v 11.30 1998-09-30 02:22:18 mike Exp $
  */
 #define CONFIGDEFS	RT_CONFIG
 
@@ -169,6 +169,6 @@ rtweight:	RTWEIGHT_OBJ LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBFB_DEP
 
 /* Temp hack -Mike */
 disp:	disp.o LIBRT_DEP LIBBN_DEP LIBBU_DEP LIBFB_DEP LIBTCL_DEP LIBTK_DEP spectrum.o
-	CC LDFLAGS disp.o spectrum.o LIBRT LIBBN LIBBU LIBBU_LIBES LIBWDB LIBFB LIBFB_LIBES LIBTK LIBTCL LIBTCL_LIBES LIBES -o disp
+	CC LDFLAGS disp.o spectrum.o LIBRT LIBBN LIBBU LIBBU_LIBES LIBWDB LIBTK LIBTCL LIBTCL_LIBES LIBFB LIBFB_LIBES LIBES -o disp
 
 #include "../Cakefile.rules"
