@@ -1,7 +1,7 @@
 /*
  *			util/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.34 1999-04-15 13:27:54 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/util/Cakefile,v 11.35 1999-10-30 03:06:27 butler Exp $
  */
 
 #define STATIC_PRODUCTS morphedit.tcl
@@ -92,8 +92,7 @@ pixbustup:	pixbustup.o
 
 /* The difficulty here is obtaining the random number tables */
 pixfade:	pixfade.o
-	CC CFLAGS -c ../rt/mathtab.c
-	CC LDFLAGS -o pixfade pixfade.o mathtab.o LIBES
+	CC LDFLAGS -o pixfade pixfade.o LIBBN LIBBU LIBBU_LIBES LIBES
 
 pixfields:	pixfields.o
 	CC LDFLAGS -o pixfields pixfields.o LIBES

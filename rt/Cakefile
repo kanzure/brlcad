@@ -1,7 +1,7 @@
 /*
  *			rt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 11.34 1999-07-02 22:19:45 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/rt/Cakefile,v 11.35 1999-10-30 03:06:27 butler Exp $
  */
 #define CONFIGDEFS	RT_CONFIG
 
@@ -20,12 +20,12 @@
 	rtshot \
 	main opt do worker \
 	view viewpp viewray viewrad viewcheck viewg3 \
-	shade mathtab \
+	shade \
 	material refract \
 	wray bomb
 
 /*  The "top-half" (user interface) for the RT family of programs */
-#define RTUIF	main.o opt.o do.o worker.o mathtab.o bomb.o
+#define RTUIF	main.o opt.o do.o worker.o bomb.o
 
 /* Explicit composition of each product */
 
