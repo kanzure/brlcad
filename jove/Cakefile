@@ -1,7 +1,7 @@
 /*
  *			jove/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/jove/Cakefile,v 1.1 1991-08-30 18:07:46 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/jove/Cakefile,v 1.2 1991-09-23 03:17:19 mike Exp $
  */
 
 #define SRCDIR	jove
@@ -10,6 +10,11 @@
 #define MANSECTION	1
 
 #define FILES	xxx
+
+/* Don't let this JOVE get installed automatically,
+ * as it may be different from the JOVE provided in /usr/brl/bin.
+ */
+#define DONT_INSTALL	1
 
 #define JOVE_OBJ	jove_buf.o \
 		jove_c.o \
@@ -37,7 +42,7 @@
 /* Explicit composition of each product */
 
 jove:	JOVE_OBJ
-	sh mkversion
+	sh ../SRCDIR/mkversion.sh
 	CC LDFLAGS -o jove JOVE_OBJ version.o LIBTERMLIB LIBES
 
 findcom:	findcom.o jove_tune.o
