@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.1 1995-01-04 09:43:27 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.2 1995-01-04 10:41:11 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -78,6 +78,7 @@ set -S2 "/bin/sh"
  *								*
  ****************************************************************/
 #undef NFS
+#define NFS	1
 /* Place "#define NFS	1" here to enable NFS feature */
 
 /****************************************************************
