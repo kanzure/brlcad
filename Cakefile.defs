@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.191 2000-06-26 18:14:29 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.192 2000-06-26 18:49:44 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -989,17 +989,20 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #	define	CC	gcc
 #	define	LEX_OPTS	-l
 #	if 1	/* PRODUCTION=1 */
+#		define	OPTIMIZER	-O2
+#	else
+#		define	OPTIMIZER	-g
+#	endif
+#	if 1	/* PRODUCTION=1 */
 /*		Shared library version support.  */
 #		define	CC_DEFS -pipe -fPIC
 #		define	ARCH_SUF	so
 #		define	LIBVERS ../sh/sharedlibvers.sh
 #		define	BUILD_LIBRARY	ld -Bshareable -o
 #		define	STANDARD_LIBES	-lm -Wl,-R -Wl,LIBDIR
-#		define	OPTIMIZER	-O2
 #	else
 /*		Static linked executables */
 #		define	CC_DEFS -pipe
-#		define	OPTIMIZER	-g
 #	endif
 
 #	define	LIBRT_TIMER	timer42
