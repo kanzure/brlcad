@@ -539,7 +539,7 @@ else
 fi
 
 
-# RCS: @(#) $Id: configure,v 1.1.1.1 2000-12-06 21:34:17 bparker Exp $
+# RCS: @(#) $Id: configure,v 1.2 2000-12-08 21:03:22 bparker Exp $
 
 TK_VERSION=8.3
 TK_MAJOR_VERSION=8
@@ -3435,7 +3435,7 @@ case $SHLIB_LD in
       TK_LD_SEARCH_FLAGS=`echo ${TK_CC_SEARCH_FLAGS} |sed -e "s|-Wl,||g" -e "s|,| |g"`
       ;;
     *)
-      TK_LD_SEARCH_FLAGS="${TK_CC_SEARCH_FLAGS}"
+      TK_LD_SEARCH_FLAGS=""
       ;;
 esac
 

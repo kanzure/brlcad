@@ -535,7 +535,7 @@ else
 fi
 
 
-# RCS: @(#) $Id: configure,v 1.1.1.1 2000-12-06 21:33:17 bparker Exp $
+# RCS: @(#) $Id: configure,v 1.2 2000-12-08 21:03:22 bparker Exp $
 
 TCL_VERSION=8.3
 TCL_MAJOR_VERSION=8
@@ -5808,7 +5808,7 @@ else
 	    ;;
     esac
     TCL_SHLIB_CFLAGS=""
-    TCL_LD_SEARCH_FLAGS="${LD_SEARCH_FLAGS}"
+    TCL_LD_SEARCH_FLAGS=""
     eval "TCL_LIB_FILE=libtcl${TCL_UNSHARED_LIB_SUFFIX}"
     MAKE_LIB="ar cr \${TCL_LIB_FILE} \${OBJS}"
 fi
