@@ -1,7 +1,7 @@
 /*
  *			remrt/Cakefile
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 11.20 1998-12-30 04:53:31 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/remrt/Cakefile,v 11.21 1999-02-02 03:32:08 mike Exp $
  */
 
 #define CONFIGDEFS	RFBD_CONFIG
@@ -33,7 +33,6 @@
 		RTDIR/mathtab.o \
 		RTDIR/material.o RTDIR/refract.o \
 		RTDIR/wray.o \
-		RTDIR/turb.o \
 		LIBPKG LIBPKG_LIBES \
 		LIBOPTICAL \
 		LIBRT LIBBN LIBBU LIBBU_LIBES LIBTCL LIBTCL_LIBES LIBES
