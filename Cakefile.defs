@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.184 2000-03-04 00:57:20 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.185 2000-03-15 22:33:26 mike Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -710,7 +710,7 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #		else
 #			define	OPTIMIZER	-g -fwritable-strings
 #		endif
-#		define	CC_DEFS		-D_REENTRANT -DSUNOS=53
+#		define	CC_DEFS		-D_REENTRANT -DSUNOS=55
 #		define	CC_OPTS		-I''XINCDIR
 #	else
 /*		For now, we expect /opt/SUNWspro/bin ANSI compiler to be used */
@@ -722,7 +722,7 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #		endif
 #		define	CC_OPTS		-Xc -K PIC -I''XINCDIR
 /*		SunPro C 2.0.1 does not define __sparc or sparc.  3.0 on does */
-#		define	CC_DEFS		-D_REENTRANT -D__sparc -DSUNOS=53
+#		define	CC_DEFS		-D_REENTRANT -D__sparc -DSUNOS=55
 #	endif
 
 /*	Shared library support */
