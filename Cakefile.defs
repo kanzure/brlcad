@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.40 1996-04-24 16:21:41 bparker Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.41 1996-04-26 18:28:12 bparker Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -261,7 +261,7 @@ set -S2 "/bin/sh"
 /*		Static linked executables */
 #		define	GFLAG		
 #		define	RANLIB	ranlib5.sh
-#		define	STANDARD_LIBES	-L/usr/lib -lm -lmalloc -lc_s
+#		define	STANDARD_LIBES	-L/usr/lib -lm -lmalloc_cv -lc_s
 #		define	LD_OPTS		GFLAG
 #		define	LIBFB_LIBES	LIBPKG -L''XLIBDIR -lGL -lgl -lXt -lXm -lX11
 #		define	TCL_MGED_LIBES	LIBTKGLX -L''XLIBDIR -lX11_s -lgl_s -lGL_s
@@ -298,9 +298,9 @@ set -S2 "/bin/sh"
 				-lxmalloc -ll
 # else
 /* 	Carl's test version */
-#	define	MGED_OBJS	dm-4d dm-X dm-ogl dm-glx dm-pex dm-ogl2
+#	define	MGED_OBJS	dm-4d dm-X dm-ogl dm-glx dm-pex
 #  if 1
-#	define	MGED_CONFIG	GFLAG -DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_4D -DDM_X -I''XINCDIR -DDM_OGL -DDM_GLX -DDM_PEX -DDM_OGL2
+#	define	MGED_CONFIG	GFLAG -DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_4D -DDM_X -I''XINCDIR -DDM_OGL -DDM_GLX -DDM_PEX
 #  else
 #	define	MGED_CONFIG	GFLAG -DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_4D -DDM_X -I''XINCDIR -DDM_OGL -DDM_GLX -DMULTI_ATTACH
 #  endif
