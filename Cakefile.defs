@@ -11,7 +11,7 @@
  *	The U. S. Army Ballistic Research Laboratory
  *	Aberdeen Proving Ground, Maryland  21005-5066
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.90 1997-08-20 20:01:42 jra Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.defs,v 11.91 1997-09-22 02:00:18 butler Exp $
  *
  *  For those unfamiliar with CAKE, one important hint:
  *  When a rule includes an ampersand ('&') before the colon,
@@ -784,14 +784,14 @@ $#			define	MGED_LIBES	LIBDM LIBDM_LIBES -L''XLIBDIR -lXi -lXext -lX11 -ly -L../
 #		define	MGED_CONFIG	GFLAG -DIR_WIDGETS=1 -DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_4D -DDM_X -I''XINCDIR
 #		define	MGED_LIBES	-L../libforms/FORMS -lforms -lfm''SHARED -L''XLIBDIR -lX11''SHARED -lgl''SHARED
 #else
-#		define MGED_OBJS	dm-4d dm-X
+#		define MGED_OBJS	dm-glx dm-X
 #		define MGED_CONFIG	GFLAG -DIR_KNOBS=8 -DIR_BUTTONS=32 -DDM_4D -DDM_X -I''XINCDIR -DMGED_TCL_LIBRARY=\\\\"/n/vapor/m/cad/tclscripts/mged\\\\"
 #		define MGED_LIBES	-L''XLIBDIR -lX11 -lgl_s
 #endif
 #	endif
 #	define	HAS_TCP	1
 
-#if 1
+#if 0
 /*      Experimental     */
 #	define  CC_OPTS		GFLAG -DIRIX=4
 #	define	CC	/usr/gnu/bin/gcc
