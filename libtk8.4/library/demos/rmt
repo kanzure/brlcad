@@ -7,7 +7,7 @@ exec wish "$0" "$@"
 # Tk applications.  It allows you to select an application and
 # then type commands to that application.
 #
-# RCS: @(#) $Id: rmt,v 1.1 2003-03-13 20:04:25 jra Exp $
+# RCS: @(#) $Id: rmt,v 1.2 2003-11-07 14:58:22 morrison Exp $
 
 wm title . "Tk Remote Controller"
 wm iconname . "Tk Remote"

@@ -11,7 +11,7 @@ exec wish "$0" "$@"
 # ".tcl" files is this directory, which are sourced by this script
 # as needed.
 #
-# RCS: @(#) $Id: widget,v 1.1 2003-03-13 20:04:27 jra Exp $
+# RCS: @(#) $Id: widget,v 1.2 2003-11-07 14:58:23 morrison Exp $
 
 eval destroy [winfo child .]
 wm title . "Widget Demonstration"
