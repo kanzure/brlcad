@@ -15,7 +15,7 @@
  *  Distribution Status -
  *	Public Domain, Distribution Unlimitied.
  *
- *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.lib,v 10.3 1994-08-22 15:10:23 mike Exp $
+ *  $Header: /usr/Backup/upgrade/brlcad/brlcad/Cakefile.lib,v 10.4 1994-08-24 21:48:59 mike Exp $
  */
 
 #ifndef PRODUCTS
@@ -53,7 +53,7 @@ PRODUCTS::	EXTRA_OBJ OBJ
 #if defined(__CAKE__irix5)
 #	define	SHARED_PRODUCT	PRODUCTS
 #else
-#	define	SHARED_PRODUCT	PRODUCTS.LIBVERS
+#	define	SHARED_PRODUCT	PRODUCTS''LIBVERS
 #endif
 PRODUCTS&::	EXTRA_OBJ OBJ
 	rm -f PRODUCTS*; EXTRA_SETUP
