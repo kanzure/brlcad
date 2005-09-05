@@ -6,3 +6,5 @@ autom4te.cache
 config.*
 configure
 libtool
+ltmain.sh
+so_locations
