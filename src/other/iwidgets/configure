@@ -798,7 +798,7 @@ if test "$ac_init_help" = "recursive"; then
 
 if test "$ac_dir" != .; then
   ac_dir_suffix=/`echo "$ac_dir" | sed 's,^\.[\\/],,'`
-  # A "../" for each directory in $ac_dir_suffix.
+  # A "..\" for each directory in $ac_dir_suffix.
   ac_top_builddir=`echo "$ac_dir_suffix" | sed 's,/[^\\/]*,../,g'`
 else
   ac_dir_suffix= ac_top_builddir=
@@ -1189,7 +1189,7 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
 
 
-# RCS: $Id: configure,v 14.1 2004-11-16 19:42:18 morrison Exp $
+# RCS: $Id: configure,v 14.2 2006-01-17 05:54:49 brlcad Exp $
 
 ITCL_VERSION=3.2
 
@@ -2323,7 +2323,7 @@ echo "$as_me: error: cannot create directory \"$ac_dir\"" >&2;}
 
 if test "$ac_dir" != .; then
   ac_dir_suffix=/`echo "$ac_dir" | sed 's,^\.[\\/],,'`
-  # A "../" for each directory in $ac_dir_suffix.
+  # A "..\" for each directory in $ac_dir_suffix.
   ac_top_builddir=`echo "$ac_dir_suffix" | sed 's,/[^\\/]*,../,g'`
 else
   ac_dir_suffix= ac_top_builddir=
