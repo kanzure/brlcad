@@ -8,3 +8,6 @@ configure
 libtool
 ltmain.sh
 so_locations
+.settings
+.project
+.cdtproject
