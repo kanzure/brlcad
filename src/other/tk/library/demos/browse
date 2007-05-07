@@ -7,7 +7,7 @@ exec wish "$0" ${1+"$@"}
 # directory and allows you to open files or subdirectories by
 # double-clicking.
 #
-# RCS: @(#) $Id: browse,v 1.1 2007-03-02 21:49:50 brlcad Exp $
+# RCS: @(#) $Id: browse,v 1.2 2007-05-07 04:17:43 brlcad Exp $
 
 package require Tk
 
