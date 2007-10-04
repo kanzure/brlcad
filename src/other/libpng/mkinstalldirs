@@ -4,7 +4,7 @@
 # Created: 1993-05-16
 # Public domain
 
-# $Id: mkinstalldirs,v 14.1 2007-08-18 20:15:33 brlcad Exp $
+# $Id: mkinstalldirs,v 14.2 2007-10-04 21:22:49 erikgreenwald Exp $
 
 errstatus=0
 
