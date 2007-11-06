@@ -9,7 +9,7 @@ exec wish "$0" ${1+"$@"}
 #   91/11/23 : pda@masi.ibp.fr, jt@ratp.fr : design
 #   92/08/01 : pda@masi.ibp.fr : cleaning
 #
-# RCS: @(#) $Id: ixset,v 1.3 2007-09-14 15:22:00 erikgreenwald Exp $
+# RCS: @(#) $Id: ixset,v 1.4 2007-11-06 21:38:48 erikgreenwald Exp $
 
 package require Tcl 8.4
 package require Tk
@@ -188,12 +188,12 @@ proc createwindows {} {
     #
 
     frame .buttons
-    button .buttons.ok	   -default active -command ok     -text "Ok"
+    button .buttons.ok	   -default active -command ok     -text "Ok"    
     button .buttons.apply  -default normal -command apply  -text "Apply" \
 	    -state disabled
     button .buttons.cancel -default normal -command cancel -text "Cancel" \
 	    -state disabled
-    button .buttons.quit   -default normal -command quit   -text "Quit"
+    button .buttons.quit   -default normal -command quit   -text "Quit"  
 
     pack .buttons.ok .buttons.apply .buttons.cancel .buttons.quit \
 	    -side left -expand yes -pady 5
