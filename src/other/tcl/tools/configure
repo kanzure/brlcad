@@ -1188,7 +1188,7 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
 
 
-# RCS: @(#) $Id: configure,v 1.2 2007-05-07 04:17:35 brlcad Exp $
+# RCS: @(#) $Id: configure,v 1.3 2007-11-06 21:35:31 erikgreenwald Exp $
 
 # Recover information that Tcl computed with its configure script.
 

@@ -9,7 +9,7 @@
 // See the file "license.terms" for information on usage and redistribution
 // of this file, and for a DISCLAIMER OF ALL WARRANTIES.
 //
-// RCS: @(#) $Id: Tcl-Debug.xcconfig,v 1.1 2007-05-07 04:17:31 brlcad Exp $
+// RCS: @(#) $Id: Tcl-Debug.xcconfig,v 1.2 2007-11-06 21:35:25 erikgreenwald Exp $
 //
 
 #include "Tcl-Common.xcconfig"
