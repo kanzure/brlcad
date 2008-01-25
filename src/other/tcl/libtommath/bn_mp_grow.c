@@ -52,6 +52,6 @@ int mp_grow (mp_int * a, int size)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_grow.c,v $ */
 /* $Revision$ */
 /* $Date$ */

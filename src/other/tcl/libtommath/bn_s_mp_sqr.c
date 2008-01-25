@@ -79,6 +79,6 @@ int s_mp_sqr (mp_int * a, mp_int * b)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_s_mp_sqr.c,v $ */
 /* $Revision$ */
 /* $Date$ */

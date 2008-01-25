@@ -85,6 +85,6 @@ int s_mp_mul_digs (mp_int * a, mp_int * b, mp_int * c, int digs)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_s_mp_mul_digs.c,v $ */
 /* $Revision$ */
 /* $Date$ */

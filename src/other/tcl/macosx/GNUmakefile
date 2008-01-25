@@ -9,7 +9,7 @@
 # See the file "license.terms" for information on usage and redistribution of
 # this file, and for a DISCLAIMER OF ALL WARRANTIES.
 #
-# RCS: @(#) $Id: GNUmakefile,v 1.3 2007-11-06 21:35:25 erikgreenwald Exp $
+# RCS: @(#) $Id: GNUmakefile,v 1.8 2007/12/13 15:26:03 dgp Exp $
 #
 ########################################################################################################
 

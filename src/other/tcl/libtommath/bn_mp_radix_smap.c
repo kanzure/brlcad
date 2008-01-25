@@ -19,6 +19,6 @@
 const char *mp_s_rmap = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/";
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_radix_smap.c,v $ */
 /* $Revision$ */
 /* $Date$ */

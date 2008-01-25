@@ -838,7 +838,7 @@ MODULE_SCOPE const char *mp_s_rmap;
 #endif
 
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/tcl/generic/tclTomMath.h,v $ */
 /* Based on Tom's version 1.8 */
 /* $Revision$ */
 /* $Date$ */

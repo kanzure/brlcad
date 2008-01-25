@@ -63,6 +63,6 @@ mp_copy (mp_int * a, mp_int * b)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_copy.c,v $ */
 /* $Revision$ */
 /* $Date$ */

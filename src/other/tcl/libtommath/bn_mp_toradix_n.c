@@ -83,6 +83,6 @@ int mp_toradix_n(mp_int * a, char *str, int radix, int maxlen)
 
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_toradix_n.c,v $ */
 /* $Revision$ */
 /* $Date$ */

@@ -34,6 +34,6 @@ bn_reverse (unsigned char *s, int len)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_reverse.c,v $ */
 /* $Revision$ */
 /* $Date$ */

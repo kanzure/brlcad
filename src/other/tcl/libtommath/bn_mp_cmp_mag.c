@@ -50,6 +50,6 @@ int mp_cmp_mag (mp_int * a, mp_int * b)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_cmp_mag.c,v $ */
 /* $Revision$ */
 /* $Date$ */

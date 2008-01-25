@@ -71,6 +71,6 @@
 
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/tommath_superclass.h,v $ */
 /* $Revision$ */
 /* $Date$ */

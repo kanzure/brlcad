@@ -29,6 +29,6 @@ mp_exch (mp_int * a, mp_int * b)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_exch.c,v $ */
 /* $Revision$ */
 /* $Date$ */

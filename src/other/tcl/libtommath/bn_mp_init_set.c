@@ -27,6 +27,6 @@ int mp_init_set (mp_int * a, mp_digit b)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_init_set.c,v $ */
 /* $Revision$ */
 /* $Date$ */

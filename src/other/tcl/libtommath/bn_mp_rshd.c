@@ -67,6 +67,6 @@ void mp_rshd (mp_int * a, int b)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_rshd.c,v $ */
 /* $Revision$ */
 /* $Date$ */

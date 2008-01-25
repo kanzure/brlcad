@@ -43,6 +43,6 @@ int mp_to_unsigned_bin (mp_int * a, unsigned char *b)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_to_unsigned_bin.c,v $ */
 /* $Revision$ */
 /* $Date$ */

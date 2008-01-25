@@ -23,6 +23,6 @@ int mp_unsigned_bin_size (mp_int * a)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_unsigned_bin_size.c,v $ */
 /* $Revision$ */
 /* $Date$ */

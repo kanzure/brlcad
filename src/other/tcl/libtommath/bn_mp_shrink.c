@@ -30,6 +30,6 @@ int mp_shrink (mp_int * a)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_shrink.c,v $ */
 /* $Revision$ */
 /* $Date$ */

@@ -124,7 +124,7 @@ E2: mp_clear(&t1);
 
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_sqrt.c,v $ */
 /* Based on Tom's 1.3 */
 /* $Revision$ */
 /* $Date$ */

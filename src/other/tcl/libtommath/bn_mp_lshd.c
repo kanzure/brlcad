@@ -62,6 +62,6 @@ int mp_lshd (mp_int * a, int b)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_lshd.c,v $ */
 /* $Revision$ */
 /* $Date$ */

@@ -40,6 +40,6 @@ mp_count_bits (mp_int * a)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_count_bits.c,v $ */
 /* $Revision$ */
 /* $Date$ */

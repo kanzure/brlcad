@@ -54,6 +54,6 @@ int mp_init_multi(mp_int *mp, ...)
 
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_init_multi.c,v $ */
 /* $Revision$ */
 /* $Date$ */

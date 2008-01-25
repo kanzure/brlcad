@@ -287,6 +287,6 @@ LBL_Q:mp_clear (&q);
 
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_div.c,v $ */
 /* $Revision$ */
 /* $Date$ */

@@ -87,7 +87,7 @@ int mp_read_radix (mp_int * a, const char *str, int radix)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_read_radix.c,v $ */
 /* Tom's revision is 1.4. */
 /* $Revision$ */
 /* $Date$ */

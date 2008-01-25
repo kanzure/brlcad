@@ -92,6 +92,6 @@ int mp_div_2d (mp_int * a, int b, mp_int * c, mp_int * d)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_div_2d.c,v $ */
 /* $Revision$ */
 /* $Date$ */

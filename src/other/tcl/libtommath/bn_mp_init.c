@@ -41,6 +41,6 @@ int mp_init (mp_int * a)
 }
 #endif
 
-/* $Source$ */
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_init.c,v $ */
 /* $Revision$ */
 /* $Date$ */
