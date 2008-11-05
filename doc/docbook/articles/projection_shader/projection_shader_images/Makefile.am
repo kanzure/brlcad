@@ -1,4 +1,3 @@
-# $Id: Makefile.am 27346 2007-01-20 16:01:02Z brlcad $
 
 projection_shaderdir = $(BRLCAD_DATA)/html/articles/projection_shader/projection_shader_images
 

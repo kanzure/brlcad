@@ -1,4 +1,3 @@
-# $Id: Makefile.am 27346 2007-01-20 16:01:02Z brlcad $
 
 build_regiondir = $(BRLCAD_DATA)/html/articles/build_region/build_region_images
 

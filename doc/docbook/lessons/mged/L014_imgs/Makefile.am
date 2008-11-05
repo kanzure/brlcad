@@ -1,4 +1,3 @@
-# $Id: Makefile.am 27346 2007-01-20 16:01:02Z brlcad $
 
 L014_imgsdir = $(BRLCAD_DATA)/html/lessons/mged/L014_imgs
 

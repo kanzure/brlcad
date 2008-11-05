@@ -1,4 +1,3 @@
-# $Id: Makefile.am 27346 2007-01-20 16:01:02Z brlcad $
 
 nirtdir = $(BRLCAD_DATA)/html/articles/nirt/nirt_images
 
@@ -35,5 +34,5 @@ nirt_DATA = \
 
 EXTRA_DIST = \
 	$(nirt_DATA)
-	
+
 include $(top_srcdir)/misc/Makefile.defs

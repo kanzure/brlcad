@@ -1,4 +1,3 @@
-# $Id: Makefile.am 27346 2007-01-20 16:01:02Z brlcad $
 
 L002_imgsdir = $(BRLCAD_DATA)/html/lessons/mged/L002_imgs
 
@@ -23,7 +22,6 @@ L002_imgs_DATA = \
 	truck_left.png \
 	truck_rear.png \
 	truck_right.png
-	 
 
 EXTRA_DIST = $(L002_imgs_DATA)
 

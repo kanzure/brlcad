@@ -1,10 +1,9 @@
-# $Id: Makefile.am 30754 2008-04-21 22:01:52Z starseeker $
 
 SFILES = \
 	csv.nrt \
 	csv-gap.nrt \
 	default.nrt \
-  	entryexit.nrt \
+	entryexit.nrt \
 	gap1.nrt \
 	gap2.nrt
 

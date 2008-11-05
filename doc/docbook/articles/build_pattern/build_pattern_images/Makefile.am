@@ -1,4 +1,3 @@
-# $Id: Makefile.am 27346 2007-01-20 16:01:02Z brlcad $
 
 build_patterndir = $(BRLCAD_DATA)/html/articles/build_pattern/build_pattern_images
 

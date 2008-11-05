@@ -1,4 +1,3 @@
-# $Id: Makefile.am 27346 2007-01-20 16:01:02Z brlcad $
 
 tiredir = $(BRLCAD_DATA)/html/articles/tire/tire_images
 
@@ -18,10 +17,9 @@ tire_DATA = \
 	tire_0013.png \
 	tire_0014.png
 
-
 EXTRA_DIST = \
 	$(tire_DATA) \
 	tire_0012.svg \
 	tire_0013.svg
-	
+
 include $(top_srcdir)/misc/Makefile.defs
