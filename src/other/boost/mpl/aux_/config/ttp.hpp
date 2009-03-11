@@ -10,9 +10,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Source$
-// $Date: 2007-10-03 02:02:05 +0530 (Wed, 03 Oct 2007) $
-// $Revision: 39663 $
+// $Id: ttp.hpp 49239 2008-10-10 09:10:26Z agurtovoy $
+// $Date: 2008-10-10 14:40:26 +0530 (Fri, 10 Oct 2008) $
+// $Revision: 49239 $
 
 #include <boost/mpl/aux_/config/msvc.hpp>
 #include <boost/mpl/aux_/config/gcc.hpp>
@@ -31,7 +31,7 @@
 #if    !defined(BOOST_MPL_CFG_EXTENDED_TEMPLATE_PARAMETERS_MATCHING) \
     && !defined(BOOST_MPL_PREPROCESSING_MODE) \
     && (   BOOST_WORKAROUND(BOOST_MPL_CFG_GCC, BOOST_TESTED_AT(0x0302)) \
-        || BOOST_WORKAROUND(__BORLANDC__, < 0x600) \
+        || BOOST_WORKAROUND(__BORLANDC__, BOOST_TESTED_AT(0x610)) \
         )
 
 #   define BOOST_MPL_CFG_EXTENDED_TEMPLATE_PARAMETERS_MATCHING

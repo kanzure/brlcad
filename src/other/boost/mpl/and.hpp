@@ -10,9 +10,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Source$
-// $Date: 2007-07-09 12:11:59 +0530 (Mon, 09 Jul 2007) $
-// $Revision: 38169 $
+// $Id: and.hpp 49239 2008-10-10 09:10:26Z agurtovoy $
+// $Date: 2008-10-10 14:40:26 +0530 (Fri, 10 Oct 2008) $
+// $Revision: 49239 $
 
 #include <boost/mpl/aux_/config/use_preprocessed.hpp>
 

@@ -10,9 +10,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Source$
-// $Date: 2006-11-09 03:18:32 +0530 (Thu, 09 Nov 2006) $
-// $Revision: 35927 $
+// $Id: integral_c_fwd.hpp 49239 2008-10-10 09:10:26Z agurtovoy $
+// $Date: 2008-10-10 14:40:26 +0530 (Fri, 10 Oct 2008) $
+// $Revision: 49239 $
 
 #include <boost/mpl/aux_/config/workaround.hpp>
 #include <boost/mpl/aux_/adl_barrier.hpp>

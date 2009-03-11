@@ -10,9 +10,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Source$
-// $Date: 2004-09-13 11:40:10 +0530 (Mon, 13 Sep 2004) $
-// $Revision: 25029 $
+// $Id: has_apply.hpp 49239 2008-10-10 09:10:26Z agurtovoy $
+// $Date: 2008-10-10 14:40:26 +0530 (Fri, 10 Oct 2008) $
+// $Revision: 49239 $
 
 #include <boost/mpl/aux_/config/has_xxx.hpp>
 #include <boost/mpl/aux_/config/msvc.hpp>

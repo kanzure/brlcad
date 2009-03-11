@@ -6,16 +6,17 @@
  * Boost Software License, Version 1.0. (See accompanying
  * file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
  * Author: Jeff Garland, Bart Garst
- * $Date: 2008-08-03 15:39:21 +0530 (Sun, 03 Aug 2008) $
+ * $Date: 2008-11-01 16:04:04 +0530 (Sat, 01 Nov 2008) $
  */
 
 
 /*! @file time.hpp
   This file contains the interface for the time associated classes.
 */
-#include "boost/date_time/time_defs.hpp"
-#include "boost/operators.hpp"
 #include <string>
+#include <boost/operators.hpp>
+#include <boost/date_time/time_defs.hpp>
+#include <boost/date_time/special_defs.hpp>
 
 namespace boost {
 namespace date_time {
@@ -91,7 +92,7 @@ namespace date_time {
     //! An empty string is returned for classes that do not use a time_zone
     std::string zone_as_posix_string() const
     {
-      return std::string("");
+      return std::string();
     }
 
     //! check to see if date is not a value

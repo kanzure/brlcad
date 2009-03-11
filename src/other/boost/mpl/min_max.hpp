@@ -10,9 +10,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Source$
-// $Date: 2008-06-21 08:25:14 +0530 (Sat, 21 Jun 2008) $
-// $Revision: 46570 $
+// $Id: min_max.hpp 49239 2008-10-10 09:10:26Z agurtovoy $
+// $Date: 2008-10-10 14:40:26 +0530 (Fri, 10 Oct 2008) $
+// $Revision: 49239 $
 
 #include <boost/mpl/less.hpp>
 #include <boost/mpl/if.hpp>

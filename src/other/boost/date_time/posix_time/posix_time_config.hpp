@@ -6,7 +6,7 @@
  * Boost Software License, Version 1.0. (See accompanying
  * file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
  * Author: Jeff Garland, Bart Garst
- * $Date: 2008-02-28 00:21:14 +0530 (Thu, 28 Feb 2008) $
+ * $Date: 2008-10-10 21:40:00 +0530 (Fri, 10 Oct 2008) $
  */
 
 #include "boost/date_time/time_duration.hpp"
@@ -16,7 +16,7 @@
 #include "boost/limits.hpp"
 #include "boost/date_time/compiler_config.hpp"
 #include "boost/cstdint.hpp"
-#include <cmath>
+#include <boost/config/no_tr1/cmath.hpp>
 #include <cstdlib> //for MCW 7.2 std::abs(long long)
 
 namespace boost {

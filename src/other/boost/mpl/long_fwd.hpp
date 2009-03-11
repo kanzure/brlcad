@@ -10,9 +10,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Source$
-// $Date: 2004-09-28 19:26:59 +0530 (Tue, 28 Sep 2004) $
-// $Revision: 25453 $
+// $Id: long_fwd.hpp 49239 2008-10-10 09:10:26Z agurtovoy $
+// $Date: 2008-10-10 14:40:26 +0530 (Fri, 10 Oct 2008) $
+// $Revision: 49239 $
 
 #include <boost/mpl/aux_/adl_barrier.hpp>
 #include <boost/mpl/aux_/nttp_decl.hpp>

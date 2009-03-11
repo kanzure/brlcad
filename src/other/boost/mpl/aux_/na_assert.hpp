@@ -10,9 +10,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Source$
-// $Date: 2005-07-13 18:43:38 +0530 (Wed, 13 Jul 2005) $
-// $Revision: 30043 $
+// $Id: na_assert.hpp 49239 2008-10-10 09:10:26Z agurtovoy $
+// $Date: 2008-10-10 14:40:26 +0530 (Fri, 10 Oct 2008) $
+// $Revision: 49239 $
 
 #include <boost/mpl/aux_/na.hpp>
 #include <boost/mpl/aux_/config/msvc.hpp>

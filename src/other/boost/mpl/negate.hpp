@@ -10,9 +10,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Source$
-// $Date: 2004-09-07 14:36:10 +0530 (Tue, 07 Sep 2004) $
-// $Revision: 24948 $
+// $Id: negate.hpp 49239 2008-10-10 09:10:26Z agurtovoy $
+// $Date: 2008-10-10 14:40:26 +0530 (Fri, 10 Oct 2008) $
+// $Revision: 49239 $
 
 #include <boost/mpl/integral_c.hpp>
 #include <boost/mpl/aux_/msvc_eti_base.hpp>

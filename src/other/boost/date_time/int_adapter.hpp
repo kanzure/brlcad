@@ -6,7 +6,7 @@
  * Boost Software License, Version 1.0. (See accompanying
  * file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
  * Author: Jeff Garland, Bart Garst
- * $Date: 2008-02-28 00:21:14 +0530 (Thu, 28 Feb 2008) $
+ * $Date: 2008-11-01 16:04:04 +0530 (Sat, 01 Nov 2008) $
  */
 
 
@@ -14,7 +14,9 @@
 #include "boost/limits.hpp" //work around compilers without limits
 #include "boost/date_time/special_defs.hpp"
 #include "boost/date_time/locale_config.hpp"
-#include <iostream>
+#ifndef BOOST_DATE_TIME_NO_LOCALE
+#  include <ostream>
+#endif
 
 namespace boost {
 namespace date_time {

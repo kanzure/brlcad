@@ -11,9 +11,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Source$
-// $Date: 2007-10-03 02:02:05 +0530 (Wed, 03 Oct 2007) $
-// $Revision: 39663 $
+// $Id: has_xxx.hpp 49260 2008-10-10 21:59:29Z agurtovoy $
+// $Date: 2008-10-11 03:29:29 +0530 (Sat, 11 Oct 2008) $
+// $Revision: 49260 $
 
 #include <boost/mpl/bool.hpp>
 #include <boost/mpl/aux_/type_wrapper.hpp>
@@ -157,11 +157,13 @@ template<> struct trait<T> \
 // applied to partial specialization to fix some apparently random failures 
 // (thanks to Daniel Wallin for researching this!)
 
-namespace boost { namespace mpl { namespace aux {
-template< typename T > struct msvc71_sfinae_helper { typedef void type; };
-}}}
-
 #   define BOOST_MPL_HAS_XXX_TRAIT_NAMED_DEF(trait, name, default_) \
+template< typename T > \
+struct BOOST_PP_CAT(trait, _msvc_sfinae_helper) \
+{ \
+    typedef void type; \
+};\
+\
 template< typename T, typename U = void > \
 struct BOOST_PP_CAT(trait,_impl_) \
 { \
@@ -172,7 +174,7 @@ struct BOOST_PP_CAT(trait,_impl_) \
 template< typename T > \
 struct BOOST_PP_CAT(trait,_impl_)< \
       T \
-    , typename boost::mpl::aux::msvc71_sfinae_helper< typename T::name >::type \
+    , typename BOOST_PP_CAT(trait, _msvc_sfinae_helper)< typename T::name >::type \
     > \
 { \
     BOOST_STATIC_CONSTANT(bool, value = true); \

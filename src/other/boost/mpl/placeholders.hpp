@@ -15,9 +15,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Source$
-// $Date: 2004-09-16 19:39:12 +0530 (Thu, 16 Sep 2004) $
-// $Revision: 25148 $
+// $Id: placeholders.hpp 49239 2008-10-10 09:10:26Z agurtovoy $
+// $Date: 2008-10-10 14:40:26 +0530 (Fri, 10 Oct 2008) $
+// $Revision: 49239 $
 
 
 #if !defined(BOOST_MPL_PREPROCESSING_MODE)

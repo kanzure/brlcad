@@ -10,9 +10,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Source$
-// $Date: 2008-06-20 10:13:41 +0530 (Fri, 20 Jun 2008) $
-// $Revision: 46546 $
+// $Id: traits_lambda_spec.hpp 49239 2008-10-10 09:10:26Z agurtovoy $
+// $Date: 2008-10-10 14:40:26 +0530 (Fri, 10 Oct 2008) $
+// $Revision: 49239 $
 
 #include <boost/mpl/sequence_tag_fwd.hpp>
 #include <boost/mpl/void.hpp>
