@@ -1,4 +1,4 @@
-/*                 T I E N E T _ D E F I N E . H
+/*                  T I E N E T _ S L A V E . H
  * BRL-CAD / ADRT
  *
  * Copyright (c) 2002-2009 United States Government as represented by
@@ -17,30 +17,19 @@
  * License along with this file; see the file named COPYING for more
  * information.
  */
-/** @file tienet_define.h
+/** @file tienet_slave.h
  *
  *  Comments -
- *      TIE Networking Definitions
+ *      TIE Networking Slave Header
  *
  */
+#ifndef _TIENET_SLAVE_H
+#define _TIENET_SLAVE_H
 
-#ifndef _TIENET_DEFINE_H
-#define _TIENET_DEFINE_H
-
-
-#define	TN_COMPRESSION		0		/* 0 = off, 1 = on.  Compress the result buffer */
-
-#define	TN_MASTER_PORT		1980
-#define	TN_SLAVE_PORT		1981
-
-#define	TN_OP_PREP		0x0010
-#define	TN_OP_REQWORK		0x0011
-#define	TN_OP_SENDWORK		0x0012
-#define	TN_OP_RESULT		0x0013
-#define	TN_OP_COMPLETE		0x0014
-#define	TN_OP_SHUTDOWN		0x0015
-#define TN_OP_OKAY		0x0016
-#define	TN_OP_MESSAGE		0x0017
+extern	void	tienet_slave_init(int port, char *host, void fcb_work(tienet_buffer_t *buffer, tienet_buffer_t *result),
+				  void fcb_free(void),
+				  int ver_key);
+extern	void	tienet_slave_free();
 
 #endif
 
