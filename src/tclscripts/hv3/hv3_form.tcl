@@ -1,4 +1,4 @@
-namespace eval hv3 { set {version($Id: hv3_form.tcl,v 1.99 2008/03/03 10:29:00 danielk1977 Exp $)} 1 }
+catch {namespace eval hv3 { set {version($Id: hv3_form.tcl,v 1.99 2008/03/03 10:29:00 danielk1977 Exp $)} 1 }}
 
 ###########################################################################
 # hv3_form.tcl --
