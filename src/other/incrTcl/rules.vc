@@ -6,11 +6,11 @@
 #
 # See the file "license.terms" for information on usage and redistribution
 # of this file, and for a DISCLAIMER OF ALL WARRANTIES.
-#
+# 
 # Copyright (c) 2001-2003 David Gravereaux.
 #
 #------------------------------------------------------------------------------
-# RCS: @(#) $Id: rules.vc,v 14.2 2007-09-14 15:21:32 erikgreenwald Exp $
+# RCS: @(#) $Id: rules.vc,v 1.5 2004/04/29 17:40:43 davygrvy Exp $
 #------------------------------------------------------------------------------
 
 !ifndef _RULES_VC
