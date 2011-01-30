@@ -5,7 +5,7 @@
                 version='1.0'>
 
 <!-- ********************************************************************
-     $Id: division.xsl 7634 2008-01-05 16:06:30Z mzjn $
+     $Id: division.xsl 8320 2009-03-12 17:43:44Z mzjn $
      ********************************************************************
 
      This file is part of the XSL DocBook Stylesheet distribution.
@@ -257,6 +257,7 @@
   </xsl:if>
 
   <xsl:apply-templates select="dedication" mode="dedication"/>
+  <xsl:apply-templates select="acknowledgements" mode="acknowledgements"/>
 
   <xsl:call-template name="make.book.tocs"/>
 

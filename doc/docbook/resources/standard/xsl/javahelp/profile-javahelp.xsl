@@ -8,7 +8,7 @@
 <xsl:output method="html"/>
 
 <!-- ********************************************************************
-     $Id: javahelp.xsl 7427 2007-09-02 16:20:14Z mzjn $
+     $Id: javahelp.xsl 8400 2009-04-08 07:44:54Z bobstayton $
      ********************************************************************
 
      This file is part of the XSL DocBook Stylesheet distribution.
@@ -29,7 +29,6 @@
     <!-- Hack! If someone hands us a DocBook V5.x or DocBook NG document,
          toss the namespace and continue.  Use the docbook5 namespaced
          stylesheets for DocBook5 if you don't want to use this feature.-->
-    <!-- include extra test for Xalan quirk -->
     <xsl:when test="false()"/>
     <xsl:otherwise>
   <xsl:choose>
