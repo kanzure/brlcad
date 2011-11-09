@@ -1,6 +1,5 @@
-/* $Id: parser.h 854 2008-03-24 16:41:12Z helly $ */
-#ifndef _parser_h
-#define _parser_h
+#ifndef _parser_symbol_h
+#define _parser_symbol_h
 
 #include "scanner.h"
 #include "re.h"
@@ -57,5 +56,20 @@ extern void parse(Scanner&, std::ostream&, std::ostream*);
 extern void parse_cleanup();
 
 } // end namespace re2c
+ 
+union YYSTYPE {
+    re2c::Symbol   *symbol;
+    re2c::RegExp   *regexp;
+    re2c::Token    *token;
+    char            op;
+    int             number;
+    re2c::ExtOp     extop;
+    re2c::Str      *str;
+    re2c::CondList *clist;
+};
+
+void *ParseAlloc(void *(*mallocProc)(size_t));
+void Parse(void *parser, int tokenID, YYSTYPE value);
+void ParseFree(void *parser, void (*freeProc)(void*));
 
 #endif

@@ -1,6 +1,5 @@
+/* lemon input based on re2c's parser.y yacc input */
 %include {
-
-/* $Id: parser.y 858 2008-04-03 20:53:44Z helly $ */
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
@@ -14,7 +13,7 @@
 #include <set>
 
 #include "globals.h"
-#include "parser.h"
+#include "parser_symbol.h"
 #include "basics.h"
 #include "dfa.h"
 #include "re.h"
@@ -434,7 +433,7 @@ void yyparse()
     int tokenID;
     extern YYSTYPE yylval;
 
-    ParseAlloc(parser, malloc);
+    parser = ParseAlloc(malloc);
     while ((tokenID = yylex()) != 0) {
 	Parse(parser, tokenID, yylval);
     }
