@@ -2,7 +2,7 @@
  Author: Marcus Boerger <helly@users.sourceforge.net>
 */
 
-/* $Id: mbo_getopt.cc 698 2007-04-23 21:06:56Z helly $ */
+/* Public Domain (file originally from re2c) */
 
 #include <stdio.h>
 #include <string.h>
