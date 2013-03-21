@@ -23,7 +23,3 @@ void mp_set (mp_int * a, mp_digit b)
   a->used  = (a->dp[0] != 0) ? 1 : 0;
 }
 #endif
-
-/* $Source: /cvsroot/tcl/libtommath/bn_mp_set.c,v $ */
-/* $Revision$ */
-/* $Date$ */

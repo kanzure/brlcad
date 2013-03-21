@@ -220,7 +220,3 @@ ERR:
 }
 
 #endif
-
-/* $Source: /cvsroot/tcl/libtommath/bn_mp_toom_sqr.c,v $ */
-/* $Revision$ */
-/* $Date$ */

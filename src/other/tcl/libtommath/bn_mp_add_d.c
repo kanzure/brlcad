@@ -107,8 +107,3 @@ mp_add_d (mp_int * a, mp_digit b, mp_int * c)
 }
 
 #endif
-
-/* $Source: /cvsroot/tcl/libtommath/bn_mp_add_d.c,v $ */
-/* Tom's revision is 1.2 */
-/* $Revision$ */
-/* $Date$ */

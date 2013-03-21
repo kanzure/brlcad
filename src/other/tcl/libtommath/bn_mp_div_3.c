@@ -73,7 +73,3 @@ mp_div_3 (mp_int * a, mp_int *c, mp_digit * d)
 }
 
 #endif
-
-/* $Source: /cvsroot/tcl/libtommath/bn_mp_div_3.c,v $ */
-/* $Revision$ */
-/* $Date$ */

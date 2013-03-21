@@ -30,7 +30,3 @@ void mp_zero (mp_int * a)
   }
 }
 #endif
-
-/* $Source: /cvsroot/tcl/libtommath/bn_mp_zero.c,v $ */
-/* $Revision$ */
-/* $Date$ */

@@ -38,7 +38,3 @@ mp_clamp (mp_int * a)
   }
 }
 #endif
-
-/* $Source: /cvsroot/tcl/libtommath/bn_mp_clamp.c,v $ */
-/* $Revision$ */
-/* $Date$ */

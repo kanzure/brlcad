@@ -103,7 +103,3 @@ s_mp_add (mp_int * a, mp_int * b, mp_int * c)
   return MP_OKAY;
 }
 #endif
-
-/* $Source: /cvsroot/tcl/libtommath/bn_s_mp_add.c,v $ */
-/* $Revision$ */
-/* $Date$ */

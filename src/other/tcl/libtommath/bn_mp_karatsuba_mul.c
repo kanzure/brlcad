@@ -161,7 +161,3 @@ ERR:
   return err;
 }
 #endif
-
-/* $Source: /cvsroot/tcl/libtommath/bn_mp_karatsuba_mul.c,v $ */
-/* $Revision$ */
-/* $Date$ */

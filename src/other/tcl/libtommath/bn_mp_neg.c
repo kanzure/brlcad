@@ -34,7 +34,3 @@ int mp_neg (mp_int * a, mp_int * b)
   return MP_OKAY;
 }
 #endif
-
-/* $Source: /cvsroot/tcl/libtommath/bn_mp_neg.c,v $ */
-/* $Revision$ */
-/* $Date$ */

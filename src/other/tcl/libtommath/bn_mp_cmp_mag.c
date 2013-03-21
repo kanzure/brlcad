@@ -49,7 +49,3 @@ int mp_cmp_mag (mp_int * a, mp_int * b)
   return MP_EQ;
 }
 #endif
-
-/* $Source: /cvsroot/tcl/libtommath/bn_mp_cmp_mag.c,v $ */
-/* $Revision$ */
-/* $Date$ */

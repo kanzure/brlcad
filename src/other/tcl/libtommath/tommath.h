@@ -577,9 +577,3 @@ extern const char *mp_s_rmap;
 #endif
 
 #endif
-
-
-/* $Source: /cvsroot/tcl/libtommath/tommath.h,v $ */
-/* Based on Tom's version 1.8 */
-/* $Revision$ */
-/* $Date$ */

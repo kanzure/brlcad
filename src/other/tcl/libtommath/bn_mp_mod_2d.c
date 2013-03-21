@@ -49,7 +49,3 @@ mp_mod_2d (mp_int * a, int b, mp_int * c)
   return MP_OKAY;
 }
 #endif
-
-/* $Source: /cvsroot/tcl/libtommath/bn_mp_mod_2d.c,v $ */
-/* $Revision$ */
-/* $Date$ */
