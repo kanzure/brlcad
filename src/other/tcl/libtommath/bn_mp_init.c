@@ -40,3 +40,7 @@ int mp_init (mp_int * a)
   return MP_OKAY;
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_init.c,v $ */
+/* $Revision$ */
+/* $Date$ */

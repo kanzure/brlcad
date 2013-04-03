@@ -62,3 +62,7 @@ mp_copy (mp_int * a, mp_int * b)
   return MP_OKAY;
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_copy.c,v $ */
+/* $Revision$ */
+/* $Date$ */

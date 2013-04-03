@@ -60,3 +60,7 @@ int mp_mul (mp_int * a, mp_int * b, mp_int * c)
   return res;
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_mul.c,v $ */
+/* $Revision$ */
+/* $Date$ */

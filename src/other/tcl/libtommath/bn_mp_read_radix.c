@@ -86,3 +86,9 @@ int mp_read_radix (mp_int * a, const char *str, int radix)
   return MP_OKAY;
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_read_radix.c,v $ */
+/* Tom's revision is 1.4. */
+/* $Revision$ */
+/* $Date$ */
+

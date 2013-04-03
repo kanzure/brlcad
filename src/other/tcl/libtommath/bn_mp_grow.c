@@ -51,3 +51,7 @@ int mp_grow (mp_int * a, int size)
   return MP_OKAY;
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_grow.c,v $ */
+/* $Revision$ */
+/* $Date$ */

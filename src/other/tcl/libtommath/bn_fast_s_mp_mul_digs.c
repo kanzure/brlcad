@@ -101,3 +101,7 @@ int fast_s_mp_mul_digs (mp_int * a, mp_int * b, mp_int * c, int digs)
   return MP_OKAY;
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_fast_s_mp_mul_digs.c,v $ */
+/* $Revision$ */
+/* $Date$ */

@@ -37,3 +37,7 @@ mp_cmp (mp_int * a, mp_int * b)
   }
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_cmp.c,v $ */
+/* $Revision$ */
+/* $Date$ */

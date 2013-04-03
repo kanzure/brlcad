@@ -78,3 +78,7 @@ int s_mp_sqr (mp_int * a, mp_int * b)
   return MP_OKAY;
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_s_mp_sqr.c,v $ */
+/* $Revision$ */
+/* $Date$ */

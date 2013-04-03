@@ -38,3 +38,7 @@ mp_clear (mp_int * a)
   }
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_clear.c,v $ */
+/* $Revision$ */
+/* $Date$ */

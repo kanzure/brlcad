@@ -51,3 +51,7 @@ int mp_expt_d (mp_int * a, mp_digit b, mp_int * c)
   return MP_OKAY;
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_expt_d.c,v $ */
+/* $Revision$ */
+/* $Date$ */

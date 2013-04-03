@@ -26,3 +26,7 @@ int mp_init_set (mp_int * a, mp_digit b)
   return err;
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_init_set.c,v $ */
+/* $Revision$ */
+/* $Date$ */

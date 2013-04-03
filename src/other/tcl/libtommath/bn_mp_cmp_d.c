@@ -38,3 +38,7 @@ int mp_cmp_d(mp_int * a, mp_digit b)
   }
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_cmp_d.c,v $ */
+/* $Revision$ */
+/* $Date$ */

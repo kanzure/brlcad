@@ -76,3 +76,7 @@ int mp_mul_2(mp_int * a, mp_int * b)
   return MP_OKAY;
 }
 #endif
+
+/* $Source: /cvsroot/tcl/libtommath/bn_mp_mul_2.c,v $ */
+/* $Revision$ */
+/* $Date$ */
