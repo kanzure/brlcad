@@ -1,5 +1,5 @@
-#ifndef SHAPEFILE_H_INCLUDED
-#define SHAPEFILE_H_INCLUDED
+#ifndef CONV_SHP_SHAPELIB_SHAPEFIL_H
+#define CONV_SHP_SHAPELIB_SHAPEFIL_H
 
 /******************************************************************************
  * $Id: shapefil.h,v 1.47 2010-01-28 11:34:34 fwarmerdam Exp $
@@ -609,4 +609,4 @@ const char SHPAPI_CALL1(*)
 }
 #endif
 
-#endif /* ndef SHAPEFILE_H_INCLUDED */
+#endif /* CONV_SHP_SHAPELIB_SHAPEFIL_H */
